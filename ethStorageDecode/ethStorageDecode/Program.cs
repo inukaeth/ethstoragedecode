@@ -3,6 +3,7 @@ using Antlr4.Runtime.Tree;
 using Nethereum.ABI;
 using Nethereum.Hex.HexTypes;
 using Nethereum.RPC.Eth.DTOs;
+using Nethereum.Util;
 using Nethereum.Web3;
 using System.Collections.Generic;
 using System.IO;
@@ -24,7 +25,7 @@ namespace ethStorageDecode
         static void Main(string[] args)
         {
             // StreamReader txt = new StreamReader(@"C:\dlt2\lenderDAO\contracts\contracts\LoanManager.sol");
-            StreamReader txt = new StreamReader(@"C:\dlt2\lenderDAOStable\contracts\contracts\ShortTermLoanPool.sol");            
+            StreamReader txt = new StreamReader(@"C:\inuka_proj\gitStorageDecodegit\contracttest\contracts\TestClassSimple.sol");            
              AntlrInputStream inputStream = new AntlrInputStream(txt.ReadToEnd());
             SolidityLexer speakLexer = new SolidityLexer(inputStream);
             CommonTokenStream commonTokenStream = new CommonTokenStream(speakLexer);
@@ -33,16 +34,26 @@ namespace ethStorageDecode
             solParser.AddParseListener(lst);
             solParser.sourceUnit();
             Web3 connect = new Web3("HTTP://127.0.0.1:7545");
-            string address = "0xBC75786F399369F92B4A2AF9E1565973BE980836";
+            string address = "0x32525207DbF25168E6Cc2E466b49D254f2f671De";
             // address = "0x"+address.Replace("0x", "0x").ToLower();
+            //var newkey = new Sha3Keccack().CalculateHashFromHex("0000000000000000000000000000000000000000000000000000000000000002");
+            BigInteger num = new BigInteger(10);
+            string hexval = num.ToString("x64");
+            var newkey = new Sha3Keccack().CalculateHashFromHex(num.ToString("x64"));
+            var newkey2 = new Sha3Keccack().CalculateHashFromHex("2");
+            BigInteger ind = BigInteger.Parse("0" + newkey, System.Globalization.NumberStyles.HexNumber);
             var curr = connect.Eth.Blocks.GetBlockNumber.SendRequestAsync();
             curr.Wait();
-            var tsk = connect.Eth.GetStorageAt.SendRequestAsync(address, new HexBigInteger(0) );
+            var tsk = connect.Eth.GetStorageAt.SendRequestAsync(address, new HexBigInteger(newkey) );
             tsk.Wait();
             string res=  tsk.Result;
-            BigInteger index = 3; //starting with 3 because first 3 are the inherited ERC20 cont
+            BigInteger index = 0; //starting with 3 because first 3 are the inherited ERC20 cont
             List<string> decodeList = new List<string>();
-            foreach(SolidityVar var in lst.variableList)
+            KeyDecodeList.AddKey("simpleMap", 4);
+            KeyDecodeList.AddKey("simpleMap", 5);
+            KeyDecodeList.AddKey("simpleMap", 8);
+            KeyDecodeList.AddKey("simpleMap", 10);
+            foreach (SolidityVar var in lst.variableList)
             {
                 decodeList.AddRange(var.Decode(connect, address, index, 0));
                 index++;

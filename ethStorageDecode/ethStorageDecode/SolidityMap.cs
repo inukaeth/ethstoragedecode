@@ -1,4 +1,6 @@
-﻿using Nethereum.Web3;
+﻿using Nethereum.Util;
+using Nethereum.Web3;
+using System;
 using System.Collections.Generic;
 using System.Numerics;
 
@@ -9,6 +11,12 @@ namespace ethStorageDecode
 
         SolidityVar basevar;
         string name;
+
+        public override int getSize()
+        {
+
+            return 1;
+        }
         public SolidityMap(SolidityVar _baseVar, string _name)
         {
             basevar = _baseVar;
@@ -16,15 +24,24 @@ namespace ethStorageDecode
         }
 
 
-        public List<BigInteger> keyList = new List<BigInteger>(); //values of keys types does not matter
+       
         public override List<string> Decode(Web3 web, string address, BigInteger index, BigInteger key)
         {
             string val = getStorageAt(web, address, index, key);
             List<string> res = new List<string>();
             res.Add("(Map)" + name + "=");
-            foreach(var ky in keyList)
-            {               
-                res.AddRange(basevar.Decode(web, address, index, ky));
+            if (KeyDecodeList.Haskeys(name))
+            {
+                foreach (var ky in KeyDecodeList.GetKeys(name))
+                {
+                    res.Add("key: " + ky.ToString("x64"));
+                    String str = (index).ToString("x64");
+                    String str2 = ky.ToString("x64");
+                    var newkey = new Sha3Keccack().CalculateHashFromHex(str2,str);//pad with zero to prevent BigIntegar prase from making number negative
+                                                                             //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
+                    BigInteger ind = BigInteger.Parse("0" + newkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative       
+                    res.AddRange(basevar.Decode(web, address, ind, 0));
+                }
             }
             return res;
 

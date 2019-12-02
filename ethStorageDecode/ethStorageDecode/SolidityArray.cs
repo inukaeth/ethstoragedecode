@@ -24,13 +24,19 @@ namespace ethStorageDecode
             //this is the lenth
             int len = Convert.ToInt32(val, 16);
             List<string> res = new List<string>();
-            res.Add("(array)" + name + "=");
-            for(int i=0;i<len;i++)
+            //res.Add("(array)" + name + "=");
+            res.Add(String.Format("array[{0}] name={1}", len, name));
+            String str = index.ToString("x64");
+            var newkey = new Sha3Keccack().CalculateHashFromHex(str);//pad with zero to prevent BigIntegar prase from making number negative
+            //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
+            BigInteger ind = BigInteger.Parse("0"+newkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative            
+            
+            for (int i=0;i<len;i++)
             {
-                var newkey = new Sha3Keccack().CalculateHash((i).ToString());
+               // var newkey = new Sha3Keccack().CalculateHash((i).ToString());
                 //BigInteger ind = new BigInteger(Encoding.ASCII.GetBytes(newkey));
-                BigInteger ind = BigInteger.Parse(newkey, System.Globalization.NumberStyles.HexNumber);
-                res.AddRange(basevar.Decode(web, address, ind, 0));                
+                
+                res.AddRange(basevar.Decode(web, address, ind+(i*basevar.getSize()), 0));                
             }
             return res;
         }
@@ -43,6 +49,19 @@ namespace ethStorageDecode
             return copy;
 
         }
+
+        public override int getSize()
+        {
+
+            return 1;
+        }
+
+
+
+        /*  public override int Size()
+          {
+              throw new NotImplementedException("Array should not support size, only base types should support it, since it is used for a");
+          }*/
     }
 
 

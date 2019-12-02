@@ -26,7 +26,7 @@ namespace ethStorageDecode
         Dictionary<string, SolidityStruct> structDefs = new Dictionary<string, SolidityStruct>();
         Dictionary<string, SolidityEnum> enumDefs = new Dictionary<string, SolidityEnum>();
         public List<SolidityVar> variableList = new List<SolidityVar>();
-
+       
 
 
         public SolList()

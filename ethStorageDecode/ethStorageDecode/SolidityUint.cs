@@ -12,6 +12,12 @@ namespace ethStorageDecode
         public uint size = 32;
         public string name;
 
+        public override int getSize()
+        {
+
+            return 1;
+        }
+
         public SolidityUint(int size, string _name)
         {
             size = 32;

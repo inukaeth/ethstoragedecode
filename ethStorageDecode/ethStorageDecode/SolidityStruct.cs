@@ -12,6 +12,7 @@ namespace ethStorageDecode
         public uint index;
         public uint offset;
         public string _name;
+        public int _size = -1;
         bool once = false;
         public string Name
         {
@@ -39,11 +40,13 @@ namespace ethStorageDecode
             string val = getStorageAt(web, address, index, key);
             List<string> res = new List<string>();
             res.Add("(struct)" + _name + "=");
+            //var newkey = new Sha3Keccack().CalculateHash((i).ToString());
             for (int i = 0; i < typesList.Count; i++)
             {
-                var newkey = new Sha3Keccack().CalculateHash((i).ToString());
-                BigInteger ind = new BigInteger(Encoding.ASCII.GetBytes(newkey));
-                res.AddRange(typesList[i].Decode(web, address, ind, 0));
+                
+                //pasdding 0 to prevent biginteger prase from making number negatives
+                //BigInteger ind = BigInteger.Parse("0"+newkey, System.Globalization.NumberStyles.HexNumber);
+                res.AddRange(typesList[i].Decode(web, address, i+index, 0));
             }
             return res;
 
@@ -60,6 +63,21 @@ namespace ethStorageDecode
                 copy.AddType((SolidityVar)vars.Clone());
             }
             return copy;
+        }
+
+        public override int getSize()
+        {
+            if (_size > 0)
+                return _size;
+            else
+            {
+                _size = 0;
+                foreach (SolidityVar v in typesList)
+                {
+                    _size += v.getSize();
+                }
+                return _size;
+            }
         }
     }
 

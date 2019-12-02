@@ -32,6 +32,17 @@ namespace ethStorageDecode
             copy.offset = offset;
             return copy;
         }
+
+        public override int getSize()
+        {
+
+            return 1;
+        }
+
+        /*   public override int Size()
+           {
+               return 1;
+           }*/
     }
 
 

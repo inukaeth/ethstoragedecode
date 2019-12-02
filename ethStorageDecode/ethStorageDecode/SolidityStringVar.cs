@@ -11,6 +11,12 @@ namespace ethStorageDecode
         public uint offset;
         public string name;
 
+        public override int getSize()
+        {
+
+            return 1;
+        }
+
         public SolidityStringVar(string _name)
         {
             name = _name;

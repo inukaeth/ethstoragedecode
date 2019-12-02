@@ -13,6 +13,13 @@ namespace ethStorageDecode
         public string name;
         public List<string> enumNames = new List<string>();
 
+
+        public override int getSize()
+        {
+
+            return 1;
+        }
+
         public SolidityEnum()
         {
             size = 32;

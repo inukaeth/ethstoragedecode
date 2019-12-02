@@ -12,6 +12,9 @@ namespace ethStorageDecode
         public uint index;
         public uint offset;
 
+        public abstract int getSize();
+      
+
         public string getStorageAt(Web3 web, string address, BigInteger index, BigInteger key)
         {
             if(key==0)
@@ -22,8 +25,8 @@ namespace ethStorageDecode
             }
             else
             {
-                var newkey = new Sha3Keccack().CalculateHash((index + key).ToString());
-                var tsk = web.Eth.GetStorageAt.SendRequestAsync(address, new HexBigInteger(newkey));
+                //var newkey = new Sha3Keccack().CalculateHash((index + key).ToString());
+                var tsk = web.Eth.GetStorageAt.SendRequestAsync(address, new HexBigInteger(key));
                 tsk.Wait();
                 return tsk.Result;
             }
@@ -32,6 +35,8 @@ namespace ethStorageDecode
 
         public abstract List<string> Decode(Web3 web,string address, BigInteger index, BigInteger key);
         public abstract object Clone();
+
+       // public abstract int Size();
     }
 
 
