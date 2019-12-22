@@ -1,0 +1,8 @@
+﻿{
+  "searchpath": [ "C:\\inuka_proj\\gitStorageDecodegit\\contracttest\\contracts" ],
+  "inputfile": "C:\\inuka_proj\\gitStorageDecodegit\\contracttest\\contracts\\TestClassSimple.sol",
+  "MapVariables": {
+    "simpleMap": [ "4", "5", "6", "7" ],
+    "var2": [ "7", "8", "9" ]
+  }
+}

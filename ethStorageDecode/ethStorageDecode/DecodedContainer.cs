@@ -1,37 +1,20 @@
-﻿using Nethereum.Hex.HexTypes;
-using Nethereum.Util;
-using Nethereum.Web3;
-using System;
-using System.Collections.Generic;
-using System.Numerics;
+﻿using System.Collections.Generic;
 
 namespace ethStorageDecode
 {
-    public abstract class SolidityVar: ICloneable
+    public class DecodedContainer
     {
-
-        public uint index;
-        public uint offset;
-        public string name;
-        public abstract int getSize();
-
-
-        public string getStorageAt(Web3 web, string address, BigInteger index)
-        {
-
-            var tsk = web.Eth.GetStorageAt.SendRequestAsync(address, new HexBigInteger(index));
-            tsk.Wait();
-            return tsk.Result;
-
-        }
+        public string rawValue;
+        public string decodedValue;
+        public string key;
+        public SolidityVar solidityVar;
 
 
-        public abstract List<string> Decode(Web3 web,string address, BigInteger index,string key);
+        public List<DecodedContainer> children = new List<DecodedContainer>();
 
-        public abstract DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index);
-        public abstract object Clone();
 
-       // public abstract int Size();
+        
+
     }
 
 

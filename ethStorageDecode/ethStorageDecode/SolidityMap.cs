@@ -6,11 +6,12 @@ using System.Numerics;
 
 namespace ethStorageDecode
 {
+
     public class SolidityMap: SolidityVar
     {
 
         SolidityVar basevar;
-        string name;
+       
 
         public override int getSize()
         {
@@ -23,28 +24,51 @@ namespace ethStorageDecode
             name = _name;
         }
 
-
        
-        public override List<string> Decode(Web3 web, string address, BigInteger index, BigInteger key)
+
+        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
+         {
+             string val = getStorageAt(web, address, index);
+             List<string> res = new List<string>();
+             res.Add("(Map)" + name + "=");
+             if (KeyDecodeList.Haskeys(name))
+             {
+                 foreach (var ky in KeyDecodeList.GetKeys(name))
+                 {
+                     res.Add("key: " + ky.ToString("x64"));
+                     String str = (index).ToString("x64");
+                     String str2 = ky.ToString("x64");
+                     var newkey = new Sha3Keccack().CalculateHashFromHex(str2,str);//pad with zero to prevent BigIntegar prase from making number negative
+                                                                              //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
+                     BigInteger ind = BigInteger.Parse("0" + newkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative       
+                     res.AddRange(basevar.Decode(web, address, ind, ky.ToString("x")));
+                 }
+             }
+             return res;
+
+         }
+
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
         {
-            string val = getStorageAt(web, address, index, key);
-            List<string> res = new List<string>();
-            res.Add("(Map)" + name + "=");
+            string val = getStorageAt(web, address, index);
+            DecodedContainer cont = new DecodedContainer
+            {
+                rawValue = val,              
+                solidityVar = this
+            };
             if (KeyDecodeList.Haskeys(name))
             {
                 foreach (var ky in KeyDecodeList.GetKeys(name))
                 {
-                    res.Add("key: " + ky.ToString("x64"));
                     String str = (index).ToString("x64");
                     String str2 = ky.ToString("x64");
-                    var newkey = new Sha3Keccack().CalculateHashFromHex(str2,str);//pad with zero to prevent BigIntegar prase from making number negative
-                                                                             //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
+                    var newkey = new Sha3Keccack().CalculateHashFromHex(str2, str);
+                    
                     BigInteger ind = BigInteger.Parse("0" + newkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative       
-                    res.AddRange(basevar.Decode(web, address, ind, 0));
+                    cont.children.Add(basevar.DecodeIntoContainer(web, address, ind));
                 }
             }
-            return res;
-
+            return cont;
         }
 
         public override object Clone()

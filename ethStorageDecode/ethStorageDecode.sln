@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ethStorageDecode", "ethStorageDecode\ethStorageDecode.csproj", "{D058C8BD-77B5-467F-81D7-E472A3EDACF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antlr_solidity", "Antlr_solidity\Antlr_solidity.csproj", "{1E78C06F-FDE1-4D3A-9720-3670AD95A0C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Antlr_solidity", "Antlr_solidity\Antlr_solidity.csproj", "{1E78C06F-FDE1-4D3A-9720-3670AD95A0C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ethStorageCli", "ethStorageCli\ethStorageCli.csproj", "{643D88AE-6049-4826-AA6C-6504BA0B71AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1E78C06F-FDE1-4D3A-9720-3670AD95A0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E78C06F-FDE1-4D3A-9720-3670AD95A0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E78C06F-FDE1-4D3A-9720-3670AD95A0C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{643D88AE-6049-4826-AA6C-6504BA0B71AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{643D88AE-6049-4826-AA6C-6504BA0B71AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{643D88AE-6049-4826-AA6C-6504BA0B71AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{643D88AE-6049-4826-AA6C-6504BA0B71AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

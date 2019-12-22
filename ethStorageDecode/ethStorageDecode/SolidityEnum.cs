@@ -7,10 +7,9 @@ namespace ethStorageDecode
 {
     public class SolidityEnum : SolidityVar
     {
-        public uint index;
-        public uint offset;
+       
         public uint size = 32;
-        public string name;
+       
         public List<string> enumNames = new List<string>();
 
 
@@ -32,14 +31,26 @@ namespace ethStorageDecode
         }
 
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, BigInteger key)
+        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
         {
-            string val = getStorageAt(web, address, index, key);
+            string val = getStorageAt(web, address, index);
             string decode = new Bytes32TypeDecoder().Decode<uint>(val).ToString();
             //todo: decode the enum
             List<string> res = new List<string>();
             res.Add("(enum)"+name+"="+decode);
             return res;
+        }
+
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        {
+            string val = getStorageAt(web, address, index);
+            string decode = new Bytes32TypeDecoder().Decode<uint>(val).ToString();
+            return new DecodedContainer
+            {
+                decodedValue = decode,
+                rawValue = val,
+                solidityVar = this
+            };
         }
         public override object Clone()
         {

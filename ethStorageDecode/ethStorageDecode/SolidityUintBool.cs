@@ -7,9 +7,7 @@ namespace ethStorageDecode
 {
     public class SolidityUintBool : SolidityVar
     {
-        public uint index;
-        public uint offset;
-        public string name;
+      
 
         public override int getSize()
         {
@@ -22,9 +20,9 @@ namespace ethStorageDecode
         }
 
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, BigInteger key)
+        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
         {
-            string val = getStorageAt(web, address, index, key);
+            string val = getStorageAt(web, address, index);
             string decode = new Bytes32TypeDecoder().Decode<bool>(val).ToString();
             List<string> res = new List<string>();
             res.Add("(bool)"+name+"="+decode);
@@ -36,6 +34,18 @@ namespace ethStorageDecode
             copy.index = index;
             copy.offset = offset;
             return copy;
+        }
+
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        {
+            string val = getStorageAt(web, address, index);
+            string decode = new Bytes32TypeDecoder().Decode<bool>(val).ToString();
+            return new DecodedContainer
+            {
+                decodedValue = decode,
+                rawValue = val,
+                solidityVar = this               
+            };
         }
     }
 

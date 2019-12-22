@@ -5,9 +5,11 @@ using Nethereum.Hex.HexTypes;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Util;
 using Nethereum.Web3;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Numerics;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace ethStorageDecode
@@ -21,7 +23,11 @@ namespace ethStorageDecode
 
     public class Program
     {
-        
+        //TODO:
+        // read json file for settings
+        // inheriance.
+        // nested maps
+        // document
         static void Main(string[] args)
         {
             // StreamReader txt = new StreamReader(@"C:\dlt2\lenderDAO\contracts\contracts\LoanManager.sol");
@@ -48,18 +54,20 @@ namespace ethStorageDecode
             tsk.Wait();
             string res=  tsk.Result;
             BigInteger index = 0; //starting with 3 because first 3 are the inherited ERC20 cont
-            List<string> decodeList = new List<string>();
+            List<DecodedContainer> decodeList = new List<DecodedContainer>();
             KeyDecodeList.AddKey("simpleMap", 4);
             KeyDecodeList.AddKey("simpleMap", 5);
             KeyDecodeList.AddKey("simpleMap", 8);
-            KeyDecodeList.AddKey("simpleMap", 10);
+            KeyDecodeList.AddKey("simpleMap", 10);            
             foreach (SolidityVar var in lst.variableList)
             {
-                decodeList.AddRange(var.Decode(connect, address, index, 0));
+                decodeList.Add(var.DecodeIntoContainer(connect, address, index));
                 index++;
             }
+            StringBuilder decodedoutput = DecodedContainerTextPrint.print(decodeList);
+            Console.WriteLine(decodedoutput.ToString());
             //Console.ReadKey();
-            
+
             //todo enum
             //solParser.AddParseListener()
             //solParser.Context 
@@ -70,7 +78,7 @@ namespace ethStorageDecode
 
 
 
-    }
+        }
     }
 
 

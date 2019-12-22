@@ -9,21 +9,19 @@ namespace ethStorageDecode
 {
     public class SolidityStruct : SolidityVar, ICloneable
     {
-        public uint index;
-        public uint offset;
-        public string _name;
+               
         public int _size = -1;
         bool once = false;
         public string Name
         {
             get
             {
-                return _name;
+                return name;
             }
             set
             {
                 if (!once)
-                    _name = value;
+                    name = value;
                 once = true;
             }
         }
@@ -35,27 +33,46 @@ namespace ethStorageDecode
         }
        
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, BigInteger key)
+        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
         {
-            string val = getStorageAt(web, address, index, key);
+            string val = getStorageAt(web, address, index);
             List<string> res = new List<string>();
-            res.Add("(struct)" + _name + "=");
+            res.Add("(struct)" + name + "=");
             //var newkey = new Sha3Keccack().CalculateHash((i).ToString());
             for (int i = 0; i < typesList.Count; i++)
             {
                 
                 //pasdding 0 to prevent biginteger prase from making number negatives
                 //BigInteger ind = BigInteger.Parse("0"+newkey, System.Globalization.NumberStyles.HexNumber);
-                res.AddRange(typesList[i].Decode(web, address, i+index, 0));
+                res.AddRange(typesList[i].Decode(web, address, i+index, ""));
             }
             return res;
 
         }
 
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        {
+            string val = getStorageAt(web, address, index);
+            DecodedContainer cont = new DecodedContainer
+            {
+                rawValue = val,
+                solidityVar = this                
+
+            };
+            for (int i = 0; i < typesList.Count; i++)
+            {
+
+                //pasdding 0 to prevent biginteger prase from making number negatives
+                //BigInteger ind = BigInteger.Parse("0"+newkey, System.Globalization.NumberStyles.HexNumber);
+                cont.children.Add(typesList[i].DecodeIntoContainer(web, address, i + index));
+            }
+            return cont;
+        }
+
         public override object Clone()
         {
             SolidityStruct copy = new SolidityStruct();
-            copy.Name = _name;
+            copy.Name = name;
             copy.index = index;
             copy.offset = offset;
             foreach(SolidityVar vars in typesList)

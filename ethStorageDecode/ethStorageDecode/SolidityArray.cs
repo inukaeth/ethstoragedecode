@@ -9,7 +9,7 @@ namespace ethStorageDecode
     public class SolidityArray :SolidityVar
     {
         SolidityVar basevar = null;
-        public string name;
+        
         public SolidityArray(SolidityVar _baseVar, string _name)
         {
             basevar = _baseVar;
@@ -18,9 +18,9 @@ namespace ethStorageDecode
         }
 
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, BigInteger key)
+        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
         {
-            string val = getStorageAt(web, address, index, key);
+            string val = getStorageAt(web, address, index);
             //this is the lenth
             int len = Convert.ToInt32(val, 16);
             List<string> res = new List<string>();
@@ -36,9 +36,38 @@ namespace ethStorageDecode
                // var newkey = new Sha3Keccack().CalculateHash((i).ToString());
                 //BigInteger ind = new BigInteger(Encoding.ASCII.GetBytes(newkey));
                 
-                res.AddRange(basevar.Decode(web, address, ind+(i*basevar.getSize()), 0));                
+                res.AddRange(basevar.Decode(web, address, ind+(i*basevar.getSize()), i.ToString()));                
             }
             return res;
+        }
+
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        {
+            string val = getStorageAt(web, address, index);
+            //this is the lenth
+            int len = Convert.ToInt32(val, 16);
+            List<string> res = new List<string>();
+            //res.Add("(array)" + name + "=");
+           
+            String str = index.ToString("x64");
+            var newkey = new Sha3Keccack().CalculateHashFromHex(str);//pad with zero to prevent BigIntegar prase from making number negative
+            //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
+            BigInteger ind = BigInteger.Parse("0" + newkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative            
+            DecodedContainer cont = new DecodedContainer
+            {
+                rawValue = val,
+                solidityVar = this
+
+            };
+            for (int i = 0; i < len; i++)
+            {
+                // var newkey = new Sha3Keccack().CalculateHash((i).ToString());
+                //BigInteger ind = new BigInteger(Encoding.ASCII.GetBytes(newkey));                
+                var chld = basevar.DecodeIntoContainer(web, address, ind + (i * basevar.getSize()));
+                chld.key = i.ToString();
+                cont.children.Add(chld);
+            }
+            return cont;
         }
 
         public override object Clone()

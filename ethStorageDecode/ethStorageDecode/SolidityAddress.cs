@@ -6,18 +6,18 @@ namespace ethStorageDecode
 {
     public class SolidityAddress : SolidityVar
     {
-        public uint index;
+      /*  public uint index;
         public uint offset;
-        public string name;
+        public string name; */
 
         public SolidityAddress(string _name)
         {
             name = _name;
         }
 
-        public override List<string> Decode(Web3 web, string addr, BigInteger index, BigInteger key)
+        public override List<string> Decode(Web3 web, string addr, BigInteger index, string key)
         {
-            string val = getStorageAt(web, addr, index, key);
+            string val = getStorageAt(web, addr, index);
             //string decode = new Bytes32TypeDecoder().Decode<AddressType>(val).ToString();
             //decoded = val;
             List<string> res = new List<string>();
@@ -37,6 +37,18 @@ namespace ethStorageDecode
         {
 
             return 1;
+        }
+
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        {
+            string val = getStorageAt(web, address, index);
+            return new DecodedContainer
+            {
+                decodedValue = val,
+                rawValue = val,
+                solidityVar = this
+
+            };
         }
 
         /*   public override int Size()
