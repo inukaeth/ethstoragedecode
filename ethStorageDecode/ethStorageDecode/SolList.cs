@@ -15,7 +15,7 @@ namespace ethStorageDecode
         bool enumStart = false;       
         bool isarray = false;
         bool inFunction = false;
-        bool startMap = false;
+        int startMap = 0;
         bool isconst = false;  
         string typename;
         string name;
@@ -252,7 +252,7 @@ namespace ethStorageDecode
         public override void EnterMapping([NotNull] MappingContext context)
         {
             base.EnterMapping(context);
-            startMap = true;
+            startMap ++;
             
         }
 
@@ -335,11 +335,17 @@ namespace ethStorageDecode
                 currStruct.AddType(currentVar);
             else if (currentVar != null)
             {
-                if(startMap)
+                if(startMap>0)
                 {
-                    SolidityMap mapvar = new SolidityMap(currentVar, name);
+                    SolidityMap mapvar = new SolidityMap(currentVar, name,startMap);
+                    /*for(int i = 1; i < startMap; i++)
+                    {
+                        SolidityMap newMap = new SolidityMap(mapvar, "");
+                        mapvar = newMap;
+                    }
+                    mapvar.name = name;*/
                     variableList.Add(mapvar);
-                    startMap = false;
+                    startMap = 0;
                 }
                 else
                     variableList.Add(currentVar);

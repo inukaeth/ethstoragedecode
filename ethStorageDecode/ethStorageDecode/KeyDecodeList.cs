@@ -40,4 +40,34 @@ namespace ethStorageDecode
             return null;
         }
     }
+
+    public class MultiKeyDecodeList
+    {
+
+        static Dictionary<string, List<string>> keyNameList = new Dictionary<string, List<string>>();
+
+        public static void AddKey(string varname, string key)
+        {
+            if (!keyNameList.ContainsKey(varname))
+            {
+                keyNameList[varname] = new List<string>();
+            }
+            keyNameList[varname].Add(key);
+        }
+
+       
+        public static bool Haskeys(string varname)
+        {
+            return keyNameList.ContainsKey(varname);
+        }
+
+        public static List<string> GetKeys(string varname)
+        {
+            if (keyNameList.ContainsKey(varname))
+            {
+                return keyNameList[varname];
+            }
+            return null;
+        }
+    }
 }

@@ -15,6 +15,8 @@ contract testClassSimple
     string[] stringArray2; 
 	SimpleStruct[] arrayStruct;
     mapping(uint=>uint) simpleMap;
+    mapping(uint=>SimpleStruct) structMap;
+    mapping(uint=>mapping(uint=>SimpleStruct)) complexMap;
 
     constructor() public
     {
@@ -35,6 +37,11 @@ contract testClassSimple
         simpleMap[10] = 42;
 		arrayStruct.push( SimpleStruct(10,"Test struct 1 in array"));
 		arrayStruct.push( SimpleStruct(20,"Test struct 2 in array"));
-		arrayStruct.push( SimpleStruct(30,"Test struct 3 in array"));        
+		arrayStruct.push( SimpleStruct(30,"Test struct 3 in array"));   
+        structMap[4] = SimpleStruct(14,"mapping struct 1");
+        structMap[1] = SimpleStruct(21,"mapping struct 2");
+        complexMap[1][2] = SimpleStruct(12,"complex struct 1 2");
+        complexMap[2][2] = SimpleStruct(22,"complex struct 2 2");
+
      }
 }

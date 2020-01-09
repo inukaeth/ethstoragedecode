@@ -58,7 +58,13 @@ namespace ethStorageDecode
             KeyDecodeList.AddKey("simpleMap", 4);
             KeyDecodeList.AddKey("simpleMap", 5);
             KeyDecodeList.AddKey("simpleMap", 8);
-            KeyDecodeList.AddKey("simpleMap", 10);            
+            KeyDecodeList.AddKey("simpleMap", 10);
+            KeyDecodeList.AddKey("structMap", 1);
+            KeyDecodeList.AddKey("structMap", 4);
+            //complex mapo
+            MultiKeyDecodeList.AddKey("complexMap", "1,2");
+            MultiKeyDecodeList.AddKey("complexMap", "2,2");
+
             foreach (SolidityVar var in lst.variableList)
             {
                 decodeList.Add(var.DecodeIntoContainer(connect, address, index));
