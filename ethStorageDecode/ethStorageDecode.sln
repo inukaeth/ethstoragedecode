@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ethStorageDecode", "ethStor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Antlr_solidity", "Antlr_solidity\Antlr_solidity.csproj", "{1E78C06F-FDE1-4D3A-9720-3670AD95A0C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ethStorageCli", "ethStorageCli\ethStorageCli.csproj", "{643D88AE-6049-4826-AA6C-6504BA0B71AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ethStorageCli", "ethStorageCli\ethStorageCli.csproj", "{643D88AE-6049-4826-AA6C-6504BA0B71AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ethStorageDecodeTest", "ethStorageDecodeTest\ethStorageDecodeTest.csproj", "{57C7E912-2ADD-4D63-9DC5-9EFA07D44C3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{643D88AE-6049-4826-AA6C-6504BA0B71AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{643D88AE-6049-4826-AA6C-6504BA0B71AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{643D88AE-6049-4826-AA6C-6504BA0B71AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C7E912-2ADD-4D63-9DC5-9EFA07D44C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C7E912-2ADD-4D63-9DC5-9EFA07D44C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C7E912-2ADD-4D63-9DC5-9EFA07D44C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C7E912-2ADD-4D63-9DC5-9EFA07D44C3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,6 +2,7 @@
 using Antlr4.Runtime.Misc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using static SolidityParser;
 
 namespace ethStorageDecode
@@ -27,13 +28,55 @@ namespace ethStorageDecode
         Dictionary<string, SolidityStruct> structDefs = new Dictionary<string, SolidityStruct>();
         Dictionary<string, SolidityEnum> enumDefs = new Dictionary<string, SolidityEnum>();
         public List<SolidityVar> variableList = new List<SolidityVar>();
+        public Dictionary<string,string> importList = new Dictionary<string, string>(); //class name is key, to raw import path
+        public List<string> errorList = new List<string>();
+        public List<string> searchpath;         
+        string ethURL;
+        string address;
+        
        
 
 
-        public SolList()
+        public SolList(List<string> _searchpath, string _address, string _ethURL)
         {
-
+            searchpath = _searchpath;
         }
+
+        public void MergeSubDecoder(SolList subdecoder)
+        {
+            variableList.AddRange(subdecoder.variableList);
+        }
+
+
+
+
+
+        public override void ExitImportDirective([NotNull] ImportDirectiveContext context)
+        {
+            string importName = context.children[1].ToString().Replace("\"", "");
+            foreach (string filepath in searchpath)
+            {
+                if (File.Exists(Path.Combine(filepath,importName)))
+                {
+                    SolList subdecoder = solidtyDecoder.DecodeInoSubDecoder(Path.Combine(filepath, importName), address, ethURL, searchpath);
+                    this.MergeSubDecoder(subdecoder);
+                    return;
+                }
+            }             
+            errorList.Add("File for import not found :" + importName);
+            
+            
+        }
+
+
+
+        
+
+        public override void EnterInheritanceSpecifier([NotNull] InheritanceSpecifierContext context)
+        {
+           
+        }
+
 
         public override void EnterFunctionCall([NotNull] FunctionCallContext context)
         {
@@ -43,7 +86,7 @@ namespace ethStorageDecode
 
         public override void ExitFunctionCall([NotNull] FunctionCallContext context)
         {
-            inFunction = false;
+            inFunction = false; 
             Console.WriteLine("->Exit function call " + context.Start.Text);
         }
 
