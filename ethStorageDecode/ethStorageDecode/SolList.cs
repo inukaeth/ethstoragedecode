@@ -3,6 +3,7 @@ using Antlr4.Runtime.Misc;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
 using static SolidityParser;
 
 namespace ethStorageDecode
@@ -19,6 +20,7 @@ namespace ethStorageDecode
         int startMap = 0;
         bool isconst = false;  
         string typename;
+        int typesize = 256;
         string name;
 
         SolidityStruct currStruct = null;
@@ -221,10 +223,10 @@ namespace ethStorageDecode
         }
 
 
-        
 
 
 
+        Regex numMatch = new Regex(@"(\w+)(\d+)");
 
         public override void EnterTypeName([NotNull] TypeNameContext context)
         {
@@ -233,6 +235,21 @@ namespace ethStorageDecode
             if (startVar)
             {
                  typename = context.Start.Text;  //if type name hit twice its an array
+                if (numMatch.IsMatch(typename))
+                {
+                    Match numberMatch = numMatch.Match(typename);
+                    typename = numberMatch.Groups[1].ToString();
+                    try
+                    {
+                        typesize = Int32.Parse(numberMatch.Groups[2].ToString());
+                    }
+                    catch
+                    {
+                        errorList.Add("Error parsing number for " + typename);
+                    }
+                }
+                else
+                    typesize = 256;
                  int chkindex = context.Start.StopIndex + 1;
                  string txtat = context.Start.InputStream.GetText(new Interval(chkindex, chkindex));
                   
@@ -336,14 +353,8 @@ namespace ethStorageDecode
                     currentVar = new SolidityAddress(name);
                     break;
                 case "uint":
-                    currentVar = new SolidityUint(32,name);
-                    break;
-                case "uint8":
-                    currentVar = new SolidityUint(8,name);
-                    break;
-                case "uint16":
-                    currentVar = new SolidityUint(16,name);
-                    break;
+                    currentVar = new SolidityUint(typesize,name);
+                    break;                
                 case "string":
                     currentVar = new SolidityStringVar(name);
                     break;

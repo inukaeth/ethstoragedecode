@@ -8,13 +8,13 @@ namespace ethStorageDecode
     public class SolidityUint : SolidityVar
     {
        
-        public uint size = 32;
+        public int size = 32;
         
 
         public override int getSize()
         {
 
-            return 1;
+            return size;
         }
 
         public SolidityUint(int size, string _name)

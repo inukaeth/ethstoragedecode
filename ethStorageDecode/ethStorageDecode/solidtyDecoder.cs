@@ -25,9 +25,11 @@ namespace ethStorageDecode
 
             List<DecodedContainer> decodeList = new List<DecodedContainer>();
             BigInteger index = 0;
+            int offset = 0;
             foreach (SolidityVar var in lst.variableList)
             {
                 decodeList.Add(var.DecodeIntoContainer(connect, address, index));
+                offset += var.getSize();
                 index++;
             }
             StringBuilder decodedoutput = DecodedContainerTextPrint.print(decodeList);

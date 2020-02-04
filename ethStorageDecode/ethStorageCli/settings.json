@@ -1,8 +1,8 @@
 ﻿{
   "EthURL": "HTTP://127.0.0.1:7545",
   "searchpath": [ "C:\\inuka_proj\\gitStorageDecodegit\\contracttest\\contracts" ],
-  "inputfile": "C:\\inuka_proj\\gitStorageDecodegit\\contracttest\\contracts\\Testinherit.sol",
-  "address": "0x9f363a7F8F1Fc172587b8DD3EfE7Eaa6b2411Caa",
+  "inputfile": "C:\\inuka_proj\\gitStorageDecodegit\\contracttest\\contracts\\TestPacking.sol",
+  "address": "0xe79C5cDb6E2b50FAb110B085241AdC39087B1462",
   "MapVariables": {
     "simpleMap": [ "4", "5", "8" ],
     "complexMap": [ "1,2", "2,2" ],

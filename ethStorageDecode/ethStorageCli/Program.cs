@@ -20,7 +20,9 @@ namespace ethStorageCli
         //TODO: json setting file
         //TODO: inheritance
         //TODO: GUI
-        //TODO: associate actual memory storage to memory space mapping in 
+        //TODO: associate actual memory storage to memory space mapping in ??
+        //TODO: handles compaction of smaller types
+        //TODO: types byte int
         static void Main(string[] args)
         {
             IConfiguration config = new ConfigurationBuilder()
