@@ -2,6 +2,7 @@
 using Nethereum.Web3;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Text;
 
 namespace ethStorageDecode
 {
@@ -11,40 +12,34 @@ namespace ethStorageDecode
         public int size = 32;
         
 
-        public override int getSize()
+        public override int getIndexSize()
         {
 
-            return size;
+            return 1;
         }
 
-        public SolidityUint(int size, string _name)
+        public SolidityUint(int _sizebit, string _name)
         {
-            size = 32;
+            size = _sizebit/8;
             name = _name;
         }
 
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
-        {
-            string val = getStorageAt(web, address, index);
-            string decode = new Bytes32TypeDecoder().Decode<BigInteger>(val).ToString();
-            List<string> res = new List<string>();
-            res.Add("(uint)"+name+"="+decode);
-            return res;
-        }
         public override object Clone()
         {
-            SolidityUint copy = new SolidityUint((int)size,name);
-            copy.offset = offset;
-            copy.index = index;
-           
+            SolidityUint copy = new SolidityUint((int)size*8,name);                       
             return copy;
         }
 
-        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index,int offset)
         {
             string val = getStorageAt(web, address, index);
-            string decode = new Bytes32TypeDecoder().Decode<BigInteger>(val).ToString();
+            BigInteger num;
+            if (offset == 0 && size == 32)
+                 num= new Bytes32TypeDecoder().Decode<BigInteger>(val);
+            else
+                 num = SolidityUtils.getAtOffset(val, offset, size);
+            string decode = num.ToString();
             return new DecodedContainer
             {
                 decodedValue = decode,
@@ -53,6 +48,13 @@ namespace ethStorageDecode
              
             };
         }
+
+        public override int getByteSize()
+        {
+            return size;
+        }
+
+
     }
 
 

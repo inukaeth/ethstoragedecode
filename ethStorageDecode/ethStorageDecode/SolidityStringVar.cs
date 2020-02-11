@@ -7,9 +7,9 @@ namespace ethStorageDecode
 {
     public class SolidityStringVar : SolidityVar
     {
-       
+        int size = 32;
 
-        public override int getSize()
+        public override int getIndexSize()
         {
 
             return 1;
@@ -22,19 +22,19 @@ namespace ethStorageDecode
 
 
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
-        {
-            string val = getStorageAt(web, address, index);
-            string decode = new Bytes32TypeDecoder().Decode<string>(val);
-            List<string> res = new List<string>();
-            res.Add("(string)"+name+"="+decode);
-            return res; 
-        }
+       
 
-        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index, int offset)
         {
             string val = getStorageAt(web, address, index);
-            string decode = new Bytes32TypeDecoder().Decode<string>(val);
+            string decode;
+            if(offset>0 || size<32)
+            {
+                BigInteger num = SolidityUtils.getAtOffset(val, offset, size);
+                val = num.ToString(); //TODO: test ouf small size strings
+               
+            }
+            decode = new Bytes32TypeDecoder().Decode<string>(val);
             return new DecodedContainer
             {
                 decodedValue = decode,
@@ -45,11 +45,16 @@ namespace ethStorageDecode
 
         public override object Clone()
         {
-            SolidityStringVar copy = new SolidityStringVar(name);
-            copy.offset = offset;
-            copy.index = index;
+            SolidityStringVar copy = new SolidityStringVar(name);           
             return copy;
         }
+
+        public override int getByteSize()
+        {
+            return size;
+        }
+
+
     }
 
 

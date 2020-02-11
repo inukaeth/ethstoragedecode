@@ -1,4 +1,5 @@
 ﻿using Nethereum.Web3;
+using System;
 using System.Collections.Generic;
 using System.Numerics;
 
@@ -15,32 +16,24 @@ namespace ethStorageDecode
             name = _name;
         }
 
-        public override List<string> Decode(Web3 web, string addr, BigInteger index, string key)
-        {
-            string val = getStorageAt(web, addr, index);
-            //string decode = new Bytes32TypeDecoder().Decode<AddressType>(val).ToString();
-            //decoded = val;
-            List<string> res = new List<string>();
-            res.Add("(address)" + name + "=" + val);
-            return res;
-        }
-
         public override object Clone()
         {
             SolidityAddress copy = new SolidityAddress(name);
-            copy.index = index;
-            copy.offset = offset;
             return copy;
         }
 
-        public override int getSize()
+        public override int getIndexSize()
         {
 
             return 1;
         }
 
-        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index, int offset)
         {
+            if(offset>0)
+            {
+                throw new NotSupportedException("Error the addreess field should not have an offset");
+            }
             string val = getStorageAt(web, address, index);
             return new DecodedContainer
             {
@@ -50,6 +43,13 @@ namespace ethStorageDecode
 
             };
         }
+
+        public override int getByteSize()
+        {
+            throw new System.NotImplementedException();
+        }
+
+       
 
         /*   public override int Size()
            {

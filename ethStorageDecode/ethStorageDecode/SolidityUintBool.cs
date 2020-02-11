@@ -9,7 +9,7 @@ namespace ethStorageDecode
     {
       
 
-        public override int getSize()
+        public override int getIndexSize()
         {
 
             return 1;
@@ -20,33 +20,30 @@ namespace ethStorageDecode
         }
 
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
-        {
-            string val = getStorageAt(web, address, index);
-            string decode = new Bytes32TypeDecoder().Decode<bool>(val).ToString();
-            List<string> res = new List<string>();
-            res.Add("(bool)"+name+"="+decode);
-            return res;
-        }
         public override object Clone()
         {
-            SolidityUintBool copy = new SolidityUintBool(name);
-            copy.index = index;
-            copy.offset = offset;
+            SolidityUintBool copy = new SolidityUintBool(name);         
             return copy;
         }
 
-        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index, int offset)
         {
             string val = getStorageAt(web, address, index);
-            string decode = new Bytes32TypeDecoder().Decode<bool>(val).ToString();
+            BigInteger num = SolidityUtils.getAtOffset(val, offset, getByteSize());
+            string decode = (num==1).ToString(); //TODO: check if the boolean conversion works
             return new DecodedContainer
             {
                 decodedValue = decode,
-                rawValue = val,
+                rawValue = num.ToString(),
                 solidityVar = this               
             };
         }
+
+        public override int getByteSize()
+        {
+            return 1; //in solidity boolean is a 8 bits.
+        }
+
     }
 
 

@@ -11,6 +11,7 @@ namespace ethStorageDecode
     {
                
         public int _size = -1;
+        public int _bytesize = -1;
         bool once = false;
         public string Name
         {
@@ -33,24 +34,8 @@ namespace ethStorageDecode
         }
        
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
-        {
-            string val = getStorageAt(web, address, index);
-            List<string> res = new List<string>();
-            res.Add("(struct)" + name + "=");
-            //var newkey = new Sha3Keccack().CalculateHash((i).ToString());
-            for (int i = 0; i < typesList.Count; i++)
-            {
-                
-                //pasdding 0 to prevent biginteger prase from making number negatives
-                //BigInteger ind = BigInteger.Parse("0"+newkey, System.Globalization.NumberStyles.HexNumber);
-                res.AddRange(typesList[i].Decode(web, address, i+index, ""));
-            }
-            return res;
 
-        }
-
-        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index, int offset)
         {
             string val = getStorageAt(web, address, index);
             DecodedContainer cont = new DecodedContainer
@@ -59,22 +44,14 @@ namespace ethStorageDecode
                 solidityVar = this                
 
             };
-            for (int i = 0; i < typesList.Count; i++)
-            {
-
-                //pasdding 0 to prevent biginteger prase from making number negatives
-                //BigInteger ind = BigInteger.Parse("0"+newkey, System.Globalization.NumberStyles.HexNumber);
-                cont.children.Add(typesList[i].DecodeIntoContainer(web, address, i + index));
-            }
+            cont.children.AddRange(solidtyDecoder.DecodIntoContainer(typesList, web, address, index, offset));
             return cont;
         }
 
         public override object Clone()
         {
             SolidityStruct copy = new SolidityStruct();
-            copy.Name = name;
-            copy.index = index;
-            copy.offset = offset;
+            copy.Name = name;           
             foreach(SolidityVar vars in typesList)
             {
                 copy.AddType((SolidityVar)vars.Clone());
@@ -82,20 +59,38 @@ namespace ethStorageDecode
             return copy;
         }
 
-        public override int getSize()
+        public override int getIndexSize()
         {
             if (_size > 0)
                 return _size;
             else
             {
-                _size = 0;
+                /*_size = 0;
                 foreach (SolidityVar v in typesList)
                 {
-                    _size += v.getSize();
+                    _size += v.getIndexSize();
                 }
+                return _size;*/
+                _size = ((getByteSize() - 1) / 32) + 1; //int rounding https://stackoverflow.com/questions/17944/how-to-round-up-the-result-of-integer-division
                 return _size;
             }
         }
+
+        public override int getByteSize()
+        {
+            if (_bytesize > 0)
+                return _bytesize;
+            else
+            {
+                _bytesize = 0;
+                foreach(SolidityVar v in typesList)
+                {
+                    _bytesize += v.getByteSize();
+                }
+                return _bytesize;
+            }
+        }
+
     }
 
 

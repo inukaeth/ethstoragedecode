@@ -33,9 +33,10 @@ contract testPacking
      
         //struct1.simpleStructVal = 42;
         //struct1.simpleStructString = "the answer to everything";
-        simpleMap[4] = 42;
-        simpleMap[8] = 42;
+        simpleMap[4] = 43;
+        simpleMap[8] = 59;
         simpleMap[10] = 42;
+        simpleMap[12] = 45;
 		arrayStruct.push( SimpleStruct(23,14,25));
 		arrayStruct.push( SimpleStruct(20,18,21));
 		arrayStruct.push( SimpleStruct(30,33,34));   

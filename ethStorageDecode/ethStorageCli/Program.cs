@@ -23,6 +23,8 @@ namespace ethStorageCli
         //TODO: associate actual memory storage to memory space mapping in ??
         //TODO: handles compaction of smaller types
         //TODO: types byte int
+        //TODO: test array of vars less than 256bytes
+        //TODO: test array of structs. 1. with same size, with varying size
         static void Main(string[] args)
         {
             IConfiguration config = new ConfigurationBuilder()

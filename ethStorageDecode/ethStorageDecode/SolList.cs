@@ -226,7 +226,7 @@ namespace ethStorageDecode
 
 
 
-        Regex numMatch = new Regex(@"(\w+)(\d+)");
+        Regex numMatch = new Regex(@"([a-z]+)(\d+)");
 
         public override void EnterTypeName([NotNull] TypeNameContext context)
         {

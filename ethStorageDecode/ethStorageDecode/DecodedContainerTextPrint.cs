@@ -41,7 +41,8 @@ namespace ethStorageDecode
             if (!String.IsNullOrEmpty(cont.key))
             {
                 keytext = String.Format("[{0}]", cont.key);
-                name = "";
+                if(!(cont.solidityVar is SolidityArray || cont.solidityVar is SolidityMap | depth==0))
+                    name = "";
                 if (cont.solidityVar is SolidityStruct)
                 {
                     structline = pad(spacesize * (depth + 1)) + cont.solidityVar.name;
@@ -49,7 +50,7 @@ namespace ethStorageDecode
                 }            
                 //decoded = "";
             }
-            current.AppendLine(pad(spacesize*depth)+String.Format("{0}{1}{2}", keytext, name, decoded));
+            current.AppendLine(pad(spacesize*depth)+String.Format("{0} {1}{2}", keytext, name, decoded));
             if (!String.IsNullOrEmpty(structline))
                 current.AppendLine(structline);
             

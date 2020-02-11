@@ -13,7 +13,7 @@ namespace ethStorageDecode
         SolidityVar basevar;
         int depth;
 
-        public override int getSize()
+        public override int getIndexSize()
         {
 
             return 1;
@@ -28,56 +28,10 @@ namespace ethStorageDecode
 
        
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
-         {
-             string val = getStorageAt(web, address, index);
-             List<string> res = new List<string>();
-             res.Add("(Map)" + name + "=");
-             if (KeyDecodeList.Haskeys(name))
-             {
-                 foreach (var ky in KeyDecodeList.GetKeys(name))
-                 {
-                     res.Add("key: " + ky.ToString("x64"));
-                     String str = (index).ToString("x64");
-                     String str2 = ky.ToString("x64");
-                    
-                     var newkey = new Sha3Keccack().CalculateHashFromHex(str2,str);//pad with zero to prevent BigIntegar prase from making number negative
-                                                                              //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
-                     BigInteger ind = BigInteger.Parse("0" + newkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative       
-                     res.AddRange(basevar.Decode(web, address, ind, ky.ToString("x")));
-                 }
-                 
-
-             }
-             if(MultiKeyDecodeList.Haskeys(name))
-             {
-                foreach(var ky in MultiKeyDecodeList.GetKeys(name))
-                {
-                    String[] items = ky.Split(',', StringSplitOptions.RemoveEmptyEntries);
-                    if(items.Length!=depth)
-                    {
-                        Console.WriteLine("incorrect number dimensions/depth for decode keys for {0} {1}", name, ky);
-                        continue;
-                    }
-                    String str = (index).ToString("x64");
-                    List<string> allitems = new List<string>(items);
-                    foreach(string itm in items)
-                    {
-                        BigInteger num = BigInteger.Parse("0" + itm, System.Globalization.NumberStyles.HexNumber);
-                        allitems.Insert(0, num.ToString("x"));
-                    }                    
-                    var newkey = new Sha3Keccack().CalculateHashFromHex(allitems.ToArray());//pad with zero to prevent BigIntegar prase from making number negative
-                                                                                   //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
-                    BigInteger ind = BigInteger.Parse("0" + newkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative       
-                    res.AddRange(basevar.Decode(web, address, ind, ind.ToString("x")));
-                }
-             }
-             return res;
-
-         }
-
-        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index, int offset)
         {
+            if (offset > 0)
+                throw new NotSupportedException("Error map does not support offset");
             string val = getStorageAt(web, address, index);
             DecodedContainer cont = new DecodedContainer
             {
@@ -93,7 +47,9 @@ namespace ethStorageDecode
                     var newkey = new Sha3Keccack().CalculateHashFromHex(str2, str);
                     
                     BigInteger ind = BigInteger.Parse("0" + newkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative       
-                    cont.children.Add(basevar.DecodeIntoContainer(web, address, ind));
+                    var currContainer = basevar.DecodeIntoContainer(web, address, ind, 0);
+                    currContainer.key = ky.ToString();
+                    cont.children.Add(currContainer);
                 }
             }
             if (MultiKeyDecodeList.Haskeys(name))
@@ -111,13 +67,15 @@ namespace ethStorageDecode
                     string lastkey = str;
                     foreach (string itm in items)
                     {
-                        BigInteger num = BigInteger.Parse("0" + itm, System.Globalization.NumberStyles.HexNumber);
+                        BigInteger num = BigInteger.Parse("0" + itm, System.Globalization.NumberStyles.Number);
                         //allitems.Insert(0, num.ToString("x64"));
                         lastkey = new Sha3Keccack().CalculateHashFromHex(num.ToString("x64"), lastkey);
                     }
                                                                                             //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
                     BigInteger ind = BigInteger.Parse("0" + lastkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative       
-                    cont.children.Add(basevar.DecodeIntoContainer(web, address, ind));
+                    var currContianer = basevar.DecodeIntoContainer(web, address, ind, 0);
+                    currContianer.key = ky;
+                    cont.children.Add(currContianer);
                 }
             }
             return cont;
@@ -130,6 +88,12 @@ namespace ethStorageDecode
             return copy;
             
         }
+
+        public override int getByteSize()
+        {
+            return -1;
+        }
+
     }
 
 

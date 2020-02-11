@@ -1,10 +1,10 @@
 ﻿{
   "EthURL": "HTTP://127.0.0.1:7545",
-  "searchpath": [ "C:\\inuka_proj\\gitStorageDecodegit\\contracttest\\contracts" ],
-  "inputfile": "C:\\inuka_proj\\gitStorageDecodegit\\contracttest\\contracts\\TestPacking.sol",
-  "address": "0xe79C5cDb6E2b50FAb110B085241AdC39087B1462",
+  "searchpath": [ "C:\\projects\\ethstoragedecode\\contracttest\\contracts" ],
+  "inputfile": "C:\\projects\\ethstoragedecode\\contracttest\\contracts\\testPacking.sol",
+  "address": "0xbC1F7a566B5E1EB6161Ee0FB3d3182abc01E489D",
   "MapVariables": {
-    "simpleMap": [ "4", "5", "8" ],
+    "simpleMap": [ "4", "8", "10","12" ],
     "complexMap": [ "1,2", "2,2" ],
     "structMap": [ "1", "4" ]
   }

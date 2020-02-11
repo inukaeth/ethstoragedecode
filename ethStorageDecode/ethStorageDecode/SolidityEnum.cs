@@ -1,5 +1,6 @@
 ﻿using Nethereum.ABI.Decoders;
 using Nethereum.Web3;
+using System;
 using System.Collections.Generic;
 using System.Numerics;
 
@@ -8,12 +9,12 @@ namespace ethStorageDecode
     public class SolidityEnum : SolidityVar
     {
        
-        public uint size = 32;
+        public int size = 32;
        
         public List<string> enumNames = new List<string>();
 
 
-        public override int getSize()
+        public override int getIndexSize()
         {
 
             return 1;
@@ -31,18 +32,10 @@ namespace ethStorageDecode
         }
 
 
-        public override List<string> Decode(Web3 web, string address, BigInteger index, string key)
+        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index, int offset)
         {
-            string val = getStorageAt(web, address, index);
-            string decode = new Bytes32TypeDecoder().Decode<uint>(val).ToString();
-            //todo: decode the enum
-            List<string> res = new List<string>();
-            res.Add("(enum)"+name+"="+decode);
-            return res;
-        }
-
-        public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index)
-        {
+            if (offset > 0)
+                throw new NotSupportedException("Error offset not supported in Enum since it is a int (256bit, 32byte)");
             string val = getStorageAt(web, address, index);
             string decode = new Bytes32TypeDecoder().Decode<uint>(val).ToString();
             return new DecodedContainer
@@ -60,6 +53,12 @@ namespace ethStorageDecode
                 copy.AddEnum(enames);
             return copy;
         }
+
+        public override int getByteSize()
+        {
+            return size;
+        }
+
     }
 
 

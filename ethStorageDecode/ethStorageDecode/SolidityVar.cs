@@ -10,10 +10,10 @@ namespace ethStorageDecode
     public abstract class SolidityVar: ICloneable
     {
 
-        public uint index;
-        public uint offset;
+        
         public string name;
-        public abstract int getSize();
+        public abstract int getIndexSize();
+        public abstract int getByteSize();
 
 
         public string getStorageAt(Web3 web, string address, BigInteger index)
@@ -25,10 +25,8 @@ namespace ethStorageDecode
 
         }
 
-
-        public abstract List<string> Decode(Web3 web,string address, BigInteger index,string key);
-
-        public abstract DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index);
+        public abstract DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index, int offset);
+        
         public abstract object Clone();
 
        // public abstract int Size();
