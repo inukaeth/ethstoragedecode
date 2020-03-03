@@ -69,5 +69,10 @@ namespace ethStorageDecode
             }
             return null;
         }
+
+        public static void ClearAll()
+        {
+            keyNameList.Clear();
+        }
     }
 }

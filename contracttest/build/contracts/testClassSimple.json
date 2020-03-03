@@ -8,12 +8,12 @@
       "type": "constructor"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/projects/ethstoragedecode/contracttest/contracts/TestClassSimple.sol\":\"testClassSimple\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/projects/ethstoragedecode/contracttest/contracts/TestClassSimple.sol\":{\"keccak256\":\"0x7154e37c7669c2a6fe795560dd7c9ca304d5361ac4adfbeb912f72750f0bf13e\",\"urls\":[\"bzz-raw://f0a5d4cbf4bb89a62150bb088b34fe09e3296df2047c74a2a89d19da49c8af1c\",\"dweb:/ipfs/QmRF2bi84n8tY1h5X2iq67rdGpWuHRUoz8qRtHN2Svbasb\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5060086000819055506040518060400160405280600c81526020017f7465737420737472696e672000000000000000000000000000000000000000008152506001908051906020019061006492919061079d565b506002600c90806001815401808255809150509060018203906000526020600020016000909192909190915055506002600e90806001815401808255809150509060018203906000526020600020016000909192909190915055506002600f908060018154018082558091505090600182039060005260206000200160009091929091909150555060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600581526020017f74657374310000000000000000000000000000000000000000000000000000008152509091909150908051906020019061015a92919061079d565b505060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600481526020017f7261696e00000000000000000000000000000000000000000000000000000000815250909190915090805190602001906101ca92919061079d565b505060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600281526020017f696e0000000000000000000000000000000000000000000000000000000000008152509091909150908051906020019061023a92919061079d565b505060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600c81526020017f7374617973206d61696e6c790000000000000000000000000000000000000000815250909190915090805190602001906102aa92919061079d565b505060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600d81526020017f696e2074686520706c61696e73000000000000000000000000000000000000008152509091909150908051906020019061031a92919061079d565b5050602a600660006004815260200190815260200160002081905550602a600660006008815260200190815260200160002081905550602a60066000600a81526020019081526020016000208190555060056040518060400160405280600a81526020016040518060400160405280601681526020017f5465737420737472756374203120696e206172726179000000000000000000008152508152509080600181540180825580915050906001820390600052602060002090600202016000909192909190915060008201518160000155602082015181600101908051906020019061040892919061081d565b5050505060056040518060400160405280601481526020016040518060400160405280601681526020017f5465737420737472756374203220696e20617272617900000000000000000000815250815250908060018154018082558091505090600182039060005260206000209060020201600090919290919091506000820151816000015560208201518160010190805190602001906104aa92919061081d565b5050505060056040518060400160405280601e81526020016040518060400160405280601681526020017f5465737420737472756374203320696e206172726179000000000000000000008152508152509080600181540180825580915050906001820390600052602060002090600202016000909192909190915060008201518160000155602082015181600101908051906020019061054c92919061081d565b505050506040518060400160405280600e81526020016040518060400160405280601081526020017f6d617070696e672073747275637420310000000000000000000000000000000081525081525060076000600481526020019081526020016000206000820151816000015560208201518160010190805190602001906105d592919061081d565b509050506040518060400160405280601581526020016040518060400160405280601081526020017f6d617070696e6720737472756374203200000000000000000000000000000000815250815250600760006001815260200190815260200160002060008201518160000155602082015181600101908051906020019061065e92919061081d565b509050506040518060400160405280600c81526020016040518060400160405280601281526020017f636f6d706c65782073747275637420312032000000000000000000000000000081525081525060086000600181526020019081526020016000206000600281526020019081526020016000206000820151816000015560208201518160010190805190602001906106f992919061081d565b509050506040518060400160405280601681526020016040518060400160405280601281526020017f636f6d706c657820737472756374203220320000000000000000000000000000815250815250600860006002815260200190815260200160002060006002815260200190815260200160002060008201518160000155602082015181600101908051906020019061079492919061081d565b509050506108c2565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106107de57805160ff191683800117855561080c565b8280016001018555821561080c579182015b8281111561080b5782518255916020019190600101906107f0565b5b509050610819919061089d565b5090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061085e57805160ff191683800117855561088c565b8280016001018555821561088c579182015b8281111561088b578251825591602001919060010190610870565b5b509050610899919061089d565b5090565b6108bf91905b808211156108bb5760008160009055506001016108a3565b5090565b90565b603e806108d06000396000f3fe6080604052600080fdfea265627a7a723158205a22c4aa91c967f2ae5d1d1ffe3c398f44f18450cc199e2bc38fa414f6526fd664736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600080fdfea265627a7a723158205a22c4aa91c967f2ae5d1d1ffe3c398f44f18450cc199e2bc38fa414f6526fd664736f6c63430005100032",
-  "sourceMap": "38:1467:1:-;;;482:1020;8:9:-1;5:2;;;30:1;27;20:12;5:2;482:1020:1;528:1;519:8;:10;;;;540:25;;;;;;;;;;;;;;;;;:10;:25;;;;;;;;;;;;:::i;:::-;;576:9;591:2;576:18;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;576:18:1;;;;;;;;;;;;;;;;;;;;;;605:9;620:2;605:18;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;605:18:1;;;;;;;;;;;;;;;;;;;;;;634:9;649:2;634:18;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;634:18:1;;;;;;;;;;;;;;;;;;;;;;663:11;:25;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;663:25:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;699:11;:24;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;699:24:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;734:11;:22;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;734:22:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;767:11;:32;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;767:32:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;810:11;:33;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;810:33:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;978:2;963:9;:12;973:1;963:12;;;;;;;;;;;:17;;;;1006:2;991:9;:12;1001:1;991:12;;;;;;;;;;;:17;;;;1035:2;1019:9;:13;1029:2;1019:13;;;;;;;;;;;:18;;;;1042:11;1060:41;;;;;;;;1073:2;1060:41;;;;;;;;;;;;;;;;;;;;;;;;1042:60;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1042:60:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1107:11;1125:41;;;;;;;;1138:2;1125:41;;;;;;;;;;;;;;;;;;;;;;;;1107:60;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1107:60:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1172:11;1190:41;;;;;;;;1203:2;1190:41;;;;;;;;;;;;;;;;;;;;;;;;1172:60;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1172:60:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1261:35;;;;;;;;1274:2;1261:35;;;;;;;;;;;;;;;;;;;;;;;;1246:9;:12;1256:1;1246:12;;;;;;;;;;;:50;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1322:35;;;;;;;;1335:2;1322:35;;;;;;;;;;;;;;;;;;;;;;;;1307:9;:12;1317:1;1307:12;;;;;;;;;;;:50;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1387:37;;;;;;;;1400:2;1387:37;;;;;;;;;;;;;;;;;;;;;;;;1368:10;:13;1379:1;1368:13;;;;;;;;;;;:16;1382:1;1368:16;;;;;;;;;;;:56;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1454:37;;;;;;;;1467:2;1454:37;;;;;;;;;;;;;;;;;;;;;;;;1435:10;:13;1446:1;1435:13;;;;;;;;;;;:16;1449:1;1435:16;;;;;;;;;;;:56;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;38:1467;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "38:1467:1:-;;;;;",
-  "source": "pragma solidity >=0.4.21 <0.6.0;\r\n\r\n\r\ncontract testClassSimple\r\n{\r\n    uint testUint;\r\n    string testString;\r\n    uint[] uintArray;\r\n    string[] stringArray;\r\n    struct SimpleStruct\r\n    {\r\n        uint simpleStructVal;\r\n        string simpleStructString;      \r\n    }    \r\n    string[] stringArray2; \r\n\tSimpleStruct[] arrayStruct;\r\n    mapping(uint=>uint) simpleMap;\r\n    mapping(uint=>SimpleStruct) structMap;\r\n    mapping(uint=>mapping(uint=>SimpleStruct)) complexMap;\r\n\r\n    constructor() public\r\n    {\r\n        testUint=8;\r\n        testString=\"test string \";\r\n        uintArray.push(12);\r\n        uintArray.push(14);\r\n        uintArray.push(15);\r\n        stringArray.push(\"test1\");\r\n        stringArray.push(\"rain\");\r\n        stringArray.push(\"in\");\r\n        stringArray.push(\"stays mainly\");\r\n        stringArray.push(\"in the plains\");\r\n        //struct1.simpleStructVal = 42;\r\n        //struct1.simpleStructString = \"the answer to everything\";\r\n        simpleMap[4] = 42;\r\n        simpleMap[8] = 42;\r\n        simpleMap[10] = 42;\r\n\t\tarrayStruct.push( SimpleStruct(10,\"Test struct 1 in array\"));\r\n\t\tarrayStruct.push( SimpleStruct(20,\"Test struct 2 in array\"));\r\n\t\tarrayStruct.push( SimpleStruct(30,\"Test struct 3 in array\"));   \r\n        structMap[4] = SimpleStruct(14,\"mapping struct 1\");\r\n        structMap[1] = SimpleStruct(21,\"mapping struct 2\");\r\n        complexMap[1][2] = SimpleStruct(12,\"complex struct 1 2\");\r\n        complexMap[2][2] = SimpleStruct(22,\"complex struct 2 2\");\r\n\r\n     }\r\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/projects/ethstoragedecode/contracttest/contracts/TestClassSimple.sol\":\"testClassSimple\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/projects/ethstoragedecode/contracttest/contracts/TestClassSimple.sol\":{\"keccak256\":\"0x0c532f705920ccddab33230ce9bd5a91d9f369621e7b671789c9d1af6e891047\",\"urls\":[\"bzz-raw://f2ca265f6db68166f1f39ba5228e3b755206f8b35c2397d24ec294f7598800d1\",\"dweb:/ipfs/QmTekWExWzV9JDTyiocGY1PBvhoTE4JPWisTN32mMeupWy\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060086000819055506040518060400160405280600c81526020017f7465737420737472696e672000000000000000000000000000000000000000008152506001908051906020019061006492919061079d565b506002600c90806001815401808255809150509060018203906000526020600020016000909192909190915055506002600e90806001815401808255809150509060018203906000526020600020016000909192909190915055506002600f908060018154018082558091505090600182039060005260206000200160009091929091909150555060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600581526020017f74657374310000000000000000000000000000000000000000000000000000008152509091909150908051906020019061015a92919061079d565b505060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600481526020017f7261696e00000000000000000000000000000000000000000000000000000000815250909190915090805190602001906101ca92919061079d565b505060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600281526020017f696e0000000000000000000000000000000000000000000000000000000000008152509091909150908051906020019061023a92919061079d565b505060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600c81526020017f7374617973206d61696e6c790000000000000000000000000000000000000000815250909190915090805190602001906102aa92919061079d565b505060038060018154018082558091505090600182039060005260206000200160006040518060400160405280600d81526020017f696e2074686520706c61696e73000000000000000000000000000000000000008152509091909150908051906020019061031a92919061079d565b5050602a600660006004815260200190815260200160002081905550602a600660006008815260200190815260200160002081905550602a60066000600a81526020019081526020016000208190555060056040518060400160405280600a81526020016040518060400160405280601681526020017f5465737420737472756374203120696e206172726179000000000000000000008152508152509080600181540180825580915050906001820390600052602060002090600202016000909192909190915060008201518160000155602082015181600101908051906020019061040892919061081d565b5050505060056040518060400160405280601481526020016040518060400160405280601681526020017f5465737420737472756374203220696e20617272617900000000000000000000815250815250908060018154018082558091505090600182039060005260206000209060020201600090919290919091506000820151816000015560208201518160010190805190602001906104aa92919061081d565b5050505060056040518060400160405280601e81526020016040518060400160405280601681526020017f5465737420737472756374203320696e206172726179000000000000000000008152508152509080600181540180825580915050906001820390600052602060002090600202016000909192909190915060008201518160000155602082015181600101908051906020019061054c92919061081d565b505050506040518060400160405280600e81526020016040518060400160405280601081526020017f6d617070696e672073747275637420310000000000000000000000000000000081525081525060076000600481526020019081526020016000206000820151816000015560208201518160010190805190602001906105d592919061081d565b509050506040518060400160405280601581526020016040518060400160405280601081526020017f6d617070696e6720737472756374203200000000000000000000000000000000815250815250600760006001815260200190815260200160002060008201518160000155602082015181600101908051906020019061065e92919061081d565b509050506040518060400160405280600c81526020016040518060400160405280601281526020017f636f6d706c65782073747275637420312032000000000000000000000000000081525081525060086000600181526020019081526020016000206000600281526020019081526020016000206000820151816000015560208201518160010190805190602001906106f992919061081d565b509050506040518060400160405280601681526020016040518060400160405280601281526020017f636f6d706c657820737472756374203220320000000000000000000000000000815250815250600860006002815260200190815260200160002060006002815260200190815260200160002060008201518160000155602082015181600101908051906020019061079492919061081d565b509050506108c2565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106107de57805160ff191683800117855561080c565b8280016001018555821561080c579182015b8281111561080b5782518255916020019190600101906107f0565b5b509050610819919061089d565b5090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061085e57805160ff191683800117855561088c565b8280016001018555821561088c579182015b8281111561088b578251825591602001919060010190610870565b5b509050610899919061089d565b5090565b6108bf91905b808211156108bb5760008160009055506001016108a3565b5090565b90565b603e806108d06000396000f3fe6080604052600080fdfea265627a7a7231582073a04b8a61ec22d218ed033476e63e7823c811c17eb588306785f1fabbe44f5e64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582073a04b8a61ec22d218ed033476e63e7823c811c17eb588306785f1fabbe44f5e64736f6c63430005100032",
+  "sourceMap": "38:1507:1:-;;;520:1022;8:9:-1;5:2;;;30:1;27;20:12;5:2;520:1022:1;566:1;557:8;:10;;;;578:25;;;;;;;;;;;;;;;;;:10;:25;;;;;;;;;;;;:::i;:::-;;614:9;629:2;614:18;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;614:18:1;;;;;;;;;;;;;;;;;;;;;;643:9;658:2;643:18;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;643:18:1;;;;;;;;;;;;;;;;;;;;;;672:9;687:2;672:18;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;672:18:1;;;;;;;;;;;;;;;;;;;;;;701:11;:25;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;701:25:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;737:11;:24;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;737:24:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;772:11;:22;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;772:22:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;805:11;:32;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;805:32:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;848:11;:33;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;848:33:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;1017:2;1002:9;:12;1012:1;1002:12;;;;;;;;;;;:17;;;;1045:2;1030:9;:12;1040:1;1030:12;;;;;;;;;;;:17;;;;1074:2;1058:9;:13;1068:2;1058:13;;;;;;;;;;;:18;;;;1081:11;1099:41;;;;;;;;1112:2;1099:41;;;;;;;;;;;;;;;;;;;;;;;;1081:60;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1081:60:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1146:11;1164:41;;;;;;;;1177:2;1164:41;;;;;;;;;;;;;;;;;;;;;;;;1146:60;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1146:60:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1211:11;1229:41;;;;;;;;1242:2;1229:41;;;;;;;;;;;;;;;;;;;;;;;;1211:60;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1211:60:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1300:35;;;;;;;;1313:2;1300:35;;;;;;;;;;;;;;;;;;;;;;;;1285:9;:12;1295:1;1285:12;;;;;;;;;;;:50;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1361:35;;;;;;;;1374:2;1361:35;;;;;;;;;;;;;;;;;;;;;;;;1346:9;:12;1356:1;1346:12;;;;;;;;;;;:50;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1426:37;;;;;;;;1439:2;1426:37;;;;;;;;;;;;;;;;;;;;;;;;1407:10;:13;1418:1;1407:13;;;;;;;;;;;:16;1421:1;1407:16;;;;;;;;;;;:56;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1493:37;;;;;;;;1506:2;1493:37;;;;;;;;;;;;;;;;;;;;;;;;1474:10;:13;1485:1;1474:13;;;;;;;;;;;:16;1488:1;1474:16;;;;;;;;;;;:56;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;38:1507;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "38:1507:1:-;;;;;",
+  "source": "pragma solidity >=0.4.21 <0.6.2;\r\n\r\n\r\ncontract testClassSimple\r\n{\r\n    uint testUint; //0\r\n    string testString; //1\r\n    uint[] uintArray; //2\r\n    string[] stringArray; //3\r\n    struct SimpleStruct //\r\n    {\r\n        uint simpleStructVal;\r\n        string simpleStructString;      \r\n    }    \r\n    string[] stringArray2; //4\r\n\tSimpleStruct[] arrayStruct; //5\r\n    mapping(uint=>uint) simpleMap; //6\r\n    mapping(uint=>SimpleStruct) structMap; //7\r\n    mapping(uint=>mapping(uint=>SimpleStruct)) complexMap; //8\r\n\r\n    constructor() public\r\n    {\r\n        testUint=8;\r\n        testString=\"test string \";\r\n        uintArray.push(12);\r\n        uintArray.push(14);\r\n        uintArray.push(15);\r\n        stringArray.push(\"test1\");\r\n        stringArray.push(\"rain\");\r\n        stringArray.push(\"in\");\r\n        stringArray.push(\"stays mainly\");\r\n        stringArray.push(\"in the plains\"); \r\n        //struct1.simpleStructVal = 42;\r\n        //struct1.simpleStructString = \"the answer to everything\";\r\n        simpleMap[4] = 42;\r\n        simpleMap[8] = 42;\r\n        simpleMap[10] = 42;\r\n\t\tarrayStruct.push( SimpleStruct(10,\"Test struct 1 in array\"));\r\n\t\tarrayStruct.push( SimpleStruct(20,\"Test struct 2 in array\"));\r\n\t\tarrayStruct.push( SimpleStruct(30,\"Test struct 3 in array\"));   \r\n        structMap[4] = SimpleStruct(14,\"mapping struct 1\");\r\n        structMap[1] = SimpleStruct(21,\"mapping struct 2\");\r\n        complexMap[1][2] = SimpleStruct(12,\"complex struct 1 2\");\r\n        complexMap[2][2] = SimpleStruct(22,\"complex struct 2 2\"); \r\n\r\n     }\r\n}",
   "sourcePath": "C:\\projects\\ethstoragedecode\\contracttest\\contracts\\TestClassSimple.sol",
   "ast": {
     "absolutePath": "/C/projects/ethstoragedecode/contracttest/contracts/TestClassSimple.sol",
@@ -34,7 +34,7 @@
           ".21",
           "<",
           "0.6",
-          ".0"
+          ".2"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:32:1"
@@ -84,7 +84,7 @@
             "name": "testString",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "91:17:1",
+            "src": "95:17:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -95,7 +95,7 @@
               "id": 61,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "91:6:1",
+              "src": "95:6:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -110,7 +110,7 @@
             "name": "uintArray",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "115:16:1",
+            "src": "123:16:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -122,7 +122,7 @@
                 "id": 63,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "115:4:1",
+                "src": "123:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -131,7 +131,7 @@
               "id": 64,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "115:6:1",
+              "src": "123:6:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                 "typeString": "uint256[]"
@@ -146,7 +146,7 @@
             "name": "stringArray",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "138:20:1",
+            "src": "150:20:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -158,7 +158,7 @@
                 "id": 66,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
-                "src": "138:6:1",
+                "src": "150:6:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_string_storage_ptr",
                   "typeString": "string"
@@ -167,7 +167,7 @@
               "id": 67,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "138:8:1",
+              "src": "150:8:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                 "typeString": "string[]"
@@ -186,7 +186,7 @@
                 "name": "simpleStructVal",
                 "nodeType": "VariableDeclaration",
                 "scope": 73,
-                "src": "201:20:1",
+                "src": "220:20:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -197,7 +197,7 @@
                   "id": 69,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "201:4:1",
+                  "src": "220:4:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -212,7 +212,7 @@
                 "name": "simpleStructString",
                 "nodeType": "VariableDeclaration",
                 "scope": 73,
-                "src": "232:25:1",
+                "src": "251:25:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -223,7 +223,7 @@
                   "id": 71,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "232:6:1",
+                  "src": "251:6:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -236,7 +236,7 @@
             "name": "SimpleStruct",
             "nodeType": "StructDefinition",
             "scope": 239,
-            "src": "165:106:1",
+            "src": "181:109:1",
             "visibility": "public"
           },
           {
@@ -245,7 +245,7 @@
             "name": "stringArray2",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "281:21:1",
+            "src": "300:21:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -257,7 +257,7 @@
                 "id": 74,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
-                "src": "281:6:1",
+                "src": "300:6:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_string_storage_ptr",
                   "typeString": "string"
@@ -266,7 +266,7 @@
               "id": 75,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "281:8:1",
+              "src": "300:8:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                 "typeString": "string[]"
@@ -281,7 +281,7 @@
             "name": "arrayStruct",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "307:26:1",
+            "src": "329:26:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -295,7 +295,7 @@
                 "name": "SimpleStruct",
                 "nodeType": "UserDefinedTypeName",
                 "referencedDeclaration": 73,
-                "src": "307:12:1",
+                "src": "329:12:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_SimpleStruct_$73_storage_ptr",
                   "typeString": "struct testClassSimple.SimpleStruct"
@@ -304,7 +304,7 @@
               "id": 78,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "307:14:1",
+              "src": "329:14:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_struct$_SimpleStruct_$73_storage_$dyn_storage_ptr",
                 "typeString": "struct testClassSimple.SimpleStruct[]"
@@ -319,7 +319,7 @@
             "name": "simpleMap",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "340:29:1",
+            "src": "366:29:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -332,14 +332,14 @@
                 "id": 80,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "348:4:1",
+                "src": "374:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "340:19:1",
+              "src": "366:19:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                 "typeString": "mapping(uint256 => uint256)"
@@ -348,7 +348,7 @@
                 "id": 81,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "354:4:1",
+                "src": "380:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -364,7 +364,7 @@
             "name": "structMap",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "376:37:1",
+            "src": "406:37:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -377,14 +377,14 @@
                 "id": 84,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "384:4:1",
+                "src": "414:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "376:27:1",
+              "src": "406:27:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                 "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct)"
@@ -395,7 +395,7 @@
                 "name": "SimpleStruct",
                 "nodeType": "UserDefinedTypeName",
                 "referencedDeclaration": 73,
-                "src": "390:12:1",
+                "src": "420:12:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_SimpleStruct_$73_storage_ptr",
                   "typeString": "struct testClassSimple.SimpleStruct"
@@ -411,7 +411,7 @@
             "name": "complexMap",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "420:53:1",
+            "src": "454:53:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -424,14 +424,14 @@
                 "id": 88,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "428:4:1",
+                "src": "462:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "420:42:1",
+              "src": "454:42:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$_$",
                 "typeString": "mapping(uint256 => mapping(uint256 => struct testClassSimple.SimpleStruct))"
@@ -442,14 +442,14 @@
                   "id": 89,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "442:4:1",
+                  "src": "476:4:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
                   }
                 },
                 "nodeType": "Mapping",
-                "src": "434:27:1",
+                "src": "468:27:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                   "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct)"
@@ -460,7 +460,7 @@
                   "name": "SimpleStruct",
                   "nodeType": "UserDefinedTypeName",
                   "referencedDeclaration": 73,
-                  "src": "448:12:1",
+                  "src": "482:12:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_struct$_SimpleStruct_$73_storage_ptr",
                     "typeString": "struct testClassSimple.SimpleStruct"
@@ -475,7 +475,7 @@
             "body": {
               "id": 237,
               "nodeType": "Block",
-              "src": "508:994:1",
+              "src": "546:996:1",
               "statements": [
                 {
                   "expression": {
@@ -492,7 +492,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 60,
-                      "src": "519:8:1",
+                      "src": "557:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -510,7 +510,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "528:1:1",
+                      "src": "566:1:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_8_by_1",
@@ -518,7 +518,7 @@
                       },
                       "value": "8"
                     },
-                    "src": "519:10:1",
+                    "src": "557:10:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -526,7 +526,7 @@
                   },
                   "id": 99,
                   "nodeType": "ExpressionStatement",
-                  "src": "519:10:1"
+                  "src": "557:10:1"
                 },
                 {
                   "expression": {
@@ -543,7 +543,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 62,
-                      "src": "540:10:1",
+                      "src": "578:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -561,7 +561,7 @@
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "551:14:1",
+                      "src": "589:14:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_24ba6315a24d649cdb612cc7b47327bb29ca0cd8f576d0a74a60860e99b28075",
@@ -569,7 +569,7 @@
                       },
                       "value": "test string "
                     },
-                    "src": "540:25:1",
+                    "src": "578:25:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
@@ -577,7 +577,7 @@
                   },
                   "id": 103,
                   "nodeType": "ExpressionStatement",
-                  "src": "540:25:1"
+                  "src": "578:25:1"
                 },
                 {
                   "expression": {
@@ -593,7 +593,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "591:2:1",
+                        "src": "629:2:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_12_by_1",
@@ -616,7 +616,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 65,
-                        "src": "576:9:1",
+                        "src": "614:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                           "typeString": "uint256[] storage ref"
@@ -630,7 +630,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "576:14:1",
+                      "src": "614:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) returns (uint256)"
@@ -644,7 +644,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "576:18:1",
+                    "src": "614:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -652,7 +652,7 @@
                   },
                   "id": 109,
                   "nodeType": "ExpressionStatement",
-                  "src": "576:18:1"
+                  "src": "614:18:1"
                 },
                 {
                   "expression": {
@@ -668,7 +668,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "620:2:1",
+                        "src": "658:2:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_14_by_1",
@@ -691,7 +691,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 65,
-                        "src": "605:9:1",
+                        "src": "643:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                           "typeString": "uint256[] storage ref"
@@ -705,7 +705,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "605:14:1",
+                      "src": "643:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) returns (uint256)"
@@ -719,7 +719,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "605:18:1",
+                    "src": "643:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -727,7 +727,7 @@
                   },
                   "id": 115,
                   "nodeType": "ExpressionStatement",
-                  "src": "605:18:1"
+                  "src": "643:18:1"
                 },
                 {
                   "expression": {
@@ -743,7 +743,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "649:2:1",
+                        "src": "687:2:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_15_by_1",
@@ -766,7 +766,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 65,
-                        "src": "634:9:1",
+                        "src": "672:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                           "typeString": "uint256[] storage ref"
@@ -780,7 +780,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "634:14:1",
+                      "src": "672:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) returns (uint256)"
@@ -794,7 +794,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "634:18:1",
+                    "src": "672:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -802,7 +802,7 @@
                   },
                   "id": 121,
                   "nodeType": "ExpressionStatement",
-                  "src": "634:18:1"
+                  "src": "672:18:1"
                 },
                 {
                   "expression": {
@@ -818,7 +818,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "680:7:1",
+                        "src": "718:7:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_6d255fc3390ee6b41191da315958b7d6a1e5b17904cc7683558f98acc57977b4",
@@ -841,7 +841,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "663:11:1",
+                        "src": "701:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -855,7 +855,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "663:16:1",
+                      "src": "701:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -869,7 +869,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "663:25:1",
+                    "src": "701:25:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -877,7 +877,7 @@
                   },
                   "id": 127,
                   "nodeType": "ExpressionStatement",
-                  "src": "663:25:1"
+                  "src": "701:25:1"
                 },
                 {
                   "expression": {
@@ -893,7 +893,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "716:6:1",
+                        "src": "754:6:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_9d0ad71e550b14712f11472e8373393fe3a47ffc2b4039a2c4ef8cea9d272ec9",
@@ -916,7 +916,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "699:11:1",
+                        "src": "737:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -930,7 +930,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "699:16:1",
+                      "src": "737:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -944,7 +944,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "699:24:1",
+                    "src": "737:24:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -952,7 +952,7 @@
                   },
                   "id": 133,
                   "nodeType": "ExpressionStatement",
-                  "src": "699:24:1"
+                  "src": "737:24:1"
                 },
                 {
                   "expression": {
@@ -968,7 +968,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "751:4:1",
+                        "src": "789:4:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_71fef67183b572476f752fa7881659e61f3c9af44e4150a1a89474e3a9da15bb",
@@ -991,7 +991,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "734:11:1",
+                        "src": "772:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -1005,7 +1005,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "734:16:1",
+                      "src": "772:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -1019,7 +1019,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "734:22:1",
+                    "src": "772:22:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1027,7 +1027,7 @@
                   },
                   "id": 139,
                   "nodeType": "ExpressionStatement",
-                  "src": "734:22:1"
+                  "src": "772:22:1"
                 },
                 {
                   "expression": {
@@ -1043,7 +1043,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "784:14:1",
+                        "src": "822:14:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_bd1e007e0fdf6c97efecf31ce62cd930135eba6ea251e145702b39b74ae62059",
@@ -1066,7 +1066,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "767:11:1",
+                        "src": "805:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -1080,7 +1080,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "767:16:1",
+                      "src": "805:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -1094,7 +1094,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "767:32:1",
+                    "src": "805:32:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1102,7 +1102,7 @@
                   },
                   "id": 145,
                   "nodeType": "ExpressionStatement",
-                  "src": "767:32:1"
+                  "src": "805:32:1"
                 },
                 {
                   "expression": {
@@ -1118,7 +1118,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "827:15:1",
+                        "src": "865:15:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_a17fcfdebce6459d87e7983be7b63fbfa9c9fea80403e6e8a09102d2a448d29a",
@@ -1141,7 +1141,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "810:11:1",
+                        "src": "848:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -1155,7 +1155,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "810:16:1",
+                      "src": "848:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -1169,7 +1169,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "810:33:1",
+                    "src": "848:33:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1177,7 +1177,7 @@
                   },
                   "id": 151,
                   "nodeType": "ExpressionStatement",
-                  "src": "810:33:1"
+                  "src": "848:33:1"
                 },
                 {
                   "expression": {
@@ -1196,7 +1196,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 83,
-                        "src": "963:9:1",
+                        "src": "1002:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                           "typeString": "mapping(uint256 => uint256)"
@@ -1213,7 +1213,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "973:1:1",
+                        "src": "1012:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_4_by_1",
@@ -1226,7 +1226,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "963:12:1",
+                      "src": "1002:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1244,7 +1244,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "978:2:1",
+                      "src": "1017:2:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_42_by_1",
@@ -1252,7 +1252,7 @@
                       },
                       "value": "42"
                     },
-                    "src": "963:17:1",
+                    "src": "1002:17:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1260,7 +1260,7 @@
                   },
                   "id": 157,
                   "nodeType": "ExpressionStatement",
-                  "src": "963:17:1"
+                  "src": "1002:17:1"
                 },
                 {
                   "expression": {
@@ -1279,7 +1279,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 83,
-                        "src": "991:9:1",
+                        "src": "1030:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                           "typeString": "mapping(uint256 => uint256)"
@@ -1296,7 +1296,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1001:1:1",
+                        "src": "1040:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_8_by_1",
@@ -1309,7 +1309,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "991:12:1",
+                      "src": "1030:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1327,7 +1327,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1006:2:1",
+                      "src": "1045:2:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_42_by_1",
@@ -1335,7 +1335,7 @@
                       },
                       "value": "42"
                     },
-                    "src": "991:17:1",
+                    "src": "1030:17:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1343,7 +1343,7 @@
                   },
                   "id": 163,
                   "nodeType": "ExpressionStatement",
-                  "src": "991:17:1"
+                  "src": "1030:17:1"
                 },
                 {
                   "expression": {
@@ -1362,7 +1362,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 83,
-                        "src": "1019:9:1",
+                        "src": "1058:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                           "typeString": "mapping(uint256 => uint256)"
@@ -1379,7 +1379,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1029:2:1",
+                        "src": "1068:2:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_10_by_1",
@@ -1392,7 +1392,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1019:13:1",
+                      "src": "1058:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1410,7 +1410,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1035:2:1",
+                      "src": "1074:2:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_42_by_1",
@@ -1418,7 +1418,7 @@
                       },
                       "value": "42"
                     },
-                    "src": "1019:18:1",
+                    "src": "1058:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1426,7 +1426,7 @@
                   },
                   "id": 169,
                   "nodeType": "ExpressionStatement",
-                  "src": "1019:18:1"
+                  "src": "1058:18:1"
                 },
                 {
                   "expression": {
@@ -1445,7 +1445,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1073:2:1",
+                            "src": "1112:2:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_10_by_1",
@@ -1463,7 +1463,7 @@
                             "kind": "string",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1076:24:1",
+                            "src": "1115:24:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_18406dbd2325e4a81a736d1fe51943390cb62b18fdc57a2ee2bc156e73792b6a",
@@ -1488,7 +1488,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 73,
-                          "src": "1060:12:1",
+                          "src": "1099:12:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                             "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -1502,7 +1502,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1060:41:1",
+                        "src": "1099:41:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                           "typeString": "struct testClassSimple.SimpleStruct memory"
@@ -1523,7 +1523,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 79,
-                        "src": "1042:11:1",
+                        "src": "1081:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_SimpleStruct_$73_storage_$dyn_storage",
                           "typeString": "struct testClassSimple.SimpleStruct storage ref[] storage ref"
@@ -1537,7 +1537,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1042:16:1",
+                      "src": "1081:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_SimpleStruct_$73_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct testClassSimple.SimpleStruct storage ref) returns (uint256)"
@@ -1551,7 +1551,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1042:60:1",
+                    "src": "1081:60:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1559,7 +1559,7 @@
                   },
                   "id": 178,
                   "nodeType": "ExpressionStatement",
-                  "src": "1042:60:1"
+                  "src": "1081:60:1"
                 },
                 {
                   "expression": {
@@ -1578,7 +1578,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1138:2:1",
+                            "src": "1177:2:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_20_by_1",
@@ -1596,7 +1596,7 @@
                             "kind": "string",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1141:24:1",
+                            "src": "1180:24:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_8dc7e5bfc0955eaa66e9c69de46e3632b57e8cee35a53d37144823708935bb41",
@@ -1621,7 +1621,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 73,
-                          "src": "1125:12:1",
+                          "src": "1164:12:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                             "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -1635,7 +1635,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1125:41:1",
+                        "src": "1164:41:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                           "typeString": "struct testClassSimple.SimpleStruct memory"
@@ -1656,7 +1656,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 79,
-                        "src": "1107:11:1",
+                        "src": "1146:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_SimpleStruct_$73_storage_$dyn_storage",
                           "typeString": "struct testClassSimple.SimpleStruct storage ref[] storage ref"
@@ -1670,7 +1670,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1107:16:1",
+                      "src": "1146:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_SimpleStruct_$73_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct testClassSimple.SimpleStruct storage ref) returns (uint256)"
@@ -1684,7 +1684,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1107:60:1",
+                    "src": "1146:60:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1692,7 +1692,7 @@
                   },
                   "id": 187,
                   "nodeType": "ExpressionStatement",
-                  "src": "1107:60:1"
+                  "src": "1146:60:1"
                 },
                 {
                   "expression": {
@@ -1711,7 +1711,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1203:2:1",
+                            "src": "1242:2:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_30_by_1",
@@ -1729,7 +1729,7 @@
                             "kind": "string",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1206:24:1",
+                            "src": "1245:24:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_d3076e33d1dc2d9a8845805aec21dbc1adb1b8aec89044bb5e585248a87aac4a",
@@ -1754,7 +1754,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 73,
-                          "src": "1190:12:1",
+                          "src": "1229:12:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                             "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -1768,7 +1768,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1190:41:1",
+                        "src": "1229:41:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                           "typeString": "struct testClassSimple.SimpleStruct memory"
@@ -1789,7 +1789,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 79,
-                        "src": "1172:11:1",
+                        "src": "1211:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_SimpleStruct_$73_storage_$dyn_storage",
                           "typeString": "struct testClassSimple.SimpleStruct storage ref[] storage ref"
@@ -1803,7 +1803,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1172:16:1",
+                      "src": "1211:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_SimpleStruct_$73_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct testClassSimple.SimpleStruct storage ref) returns (uint256)"
@@ -1817,7 +1817,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1172:60:1",
+                    "src": "1211:60:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1825,7 +1825,7 @@
                   },
                   "id": 196,
                   "nodeType": "ExpressionStatement",
-                  "src": "1172:60:1"
+                  "src": "1211:60:1"
                 },
                 {
                   "expression": {
@@ -1844,7 +1844,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 87,
-                        "src": "1246:9:1",
+                        "src": "1285:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                           "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct storage ref)"
@@ -1861,7 +1861,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1256:1:1",
+                        "src": "1295:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_4_by_1",
@@ -1874,7 +1874,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1246:12:1",
+                      "src": "1285:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                         "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -1895,7 +1895,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1274:2:1",
+                          "src": "1313:2:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_14_by_1",
@@ -1913,7 +1913,7 @@
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1277:18:1",
+                          "src": "1316:18:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_a822fd6cec05d733519230b841cd73254c3b1a591c46069d33832f239a01fc0e",
@@ -1938,7 +1938,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 73,
-                        "src": "1261:12:1",
+                        "src": "1300:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                           "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -1952,13 +1952,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1261:35:1",
+                      "src": "1300:35:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                         "typeString": "struct testClassSimple.SimpleStruct memory"
                       }
                     },
-                    "src": "1246:50:1",
+                    "src": "1285:50:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                       "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -1966,7 +1966,7 @@
                   },
                   "id": 205,
                   "nodeType": "ExpressionStatement",
-                  "src": "1246:50:1"
+                  "src": "1285:50:1"
                 },
                 {
                   "expression": {
@@ -1985,7 +1985,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 87,
-                        "src": "1307:9:1",
+                        "src": "1346:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                           "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct storage ref)"
@@ -2002,7 +2002,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1317:1:1",
+                        "src": "1356:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
@@ -2015,7 +2015,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1307:12:1",
+                      "src": "1346:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                         "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -2036,7 +2036,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1335:2:1",
+                          "src": "1374:2:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_21_by_1",
@@ -2054,7 +2054,7 @@
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1338:18:1",
+                          "src": "1377:18:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_84b20616d4b535bd5080b81a2b25941d0e33fa12eb1e98fbf8bde590e49e27be",
@@ -2079,7 +2079,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 73,
-                        "src": "1322:12:1",
+                        "src": "1361:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                           "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -2093,13 +2093,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1322:35:1",
+                      "src": "1361:35:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                         "typeString": "struct testClassSimple.SimpleStruct memory"
                       }
                     },
-                    "src": "1307:50:1",
+                    "src": "1346:50:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                       "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -2107,7 +2107,7 @@
                   },
                   "id": 214,
                   "nodeType": "ExpressionStatement",
-                  "src": "1307:50:1"
+                  "src": "1346:50:1"
                 },
                 {
                   "expression": {
@@ -2128,7 +2128,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 93,
-                          "src": "1368:10:1",
+                          "src": "1407:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$_$",
                             "typeString": "mapping(uint256 => mapping(uint256 => struct testClassSimple.SimpleStruct storage ref))"
@@ -2145,7 +2145,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1379:1:1",
+                          "src": "1418:1:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_1_by_1",
@@ -2158,7 +2158,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1368:13:1",
+                        "src": "1407:13:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                           "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct storage ref)"
@@ -2175,7 +2175,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1382:1:1",
+                        "src": "1421:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_2_by_1",
@@ -2188,7 +2188,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1368:16:1",
+                      "src": "1407:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                         "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -2209,7 +2209,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1400:2:1",
+                          "src": "1439:2:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_12_by_1",
@@ -2227,7 +2227,7 @@
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1403:20:1",
+                          "src": "1442:20:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_f5a3ec6b6808358f8e519b10efb650f08c2ab950065bab9a5198444c5bd958c1",
@@ -2252,7 +2252,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 73,
-                        "src": "1387:12:1",
+                        "src": "1426:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                           "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -2266,13 +2266,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1387:37:1",
+                      "src": "1426:37:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                         "typeString": "struct testClassSimple.SimpleStruct memory"
                       }
                     },
-                    "src": "1368:56:1",
+                    "src": "1407:56:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                       "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -2280,7 +2280,7 @@
                   },
                   "id": 225,
                   "nodeType": "ExpressionStatement",
-                  "src": "1368:56:1"
+                  "src": "1407:56:1"
                 },
                 {
                   "expression": {
@@ -2301,7 +2301,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 93,
-                          "src": "1435:10:1",
+                          "src": "1474:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$_$",
                             "typeString": "mapping(uint256 => mapping(uint256 => struct testClassSimple.SimpleStruct storage ref))"
@@ -2318,7 +2318,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1446:1:1",
+                          "src": "1485:1:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_2_by_1",
@@ -2331,7 +2331,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1435:13:1",
+                        "src": "1474:13:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                           "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct storage ref)"
@@ -2348,7 +2348,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1449:1:1",
+                        "src": "1488:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_2_by_1",
@@ -2361,7 +2361,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1435:16:1",
+                      "src": "1474:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                         "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -2382,7 +2382,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1467:2:1",
+                          "src": "1506:2:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_22_by_1",
@@ -2400,7 +2400,7 @@
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1470:20:1",
+                          "src": "1509:20:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_d1f95fc82df2ccaed9f04304f292882eb4dbf3e2cf6712d4c122a8b40e8034dd",
@@ -2425,7 +2425,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 73,
-                        "src": "1454:12:1",
+                        "src": "1493:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                           "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -2439,13 +2439,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1454:37:1",
+                      "src": "1493:37:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                         "typeString": "struct testClassSimple.SimpleStruct memory"
                       }
                     },
-                    "src": "1435:56:1",
+                    "src": "1474:56:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                       "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -2453,7 +2453,7 @@
                   },
                   "id": 236,
                   "nodeType": "ExpressionStatement",
-                  "src": "1435:56:1"
+                  "src": "1474:56:1"
                 }
               ]
             },
@@ -2468,26 +2468,26 @@
               "id": 94,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "493:2:1"
+              "src": "531:2:1"
             },
             "returnParameters": {
               "id": 95,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "508:0:1"
+              "src": "546:0:1"
             },
             "scope": 239,
-            "src": "482:1020:1",
+            "src": "520:1022:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 240,
-        "src": "38:1467:1"
+        "src": "38:1507:1"
       }
     ],
-    "src": "0:1505:1"
+    "src": "0:1545:1"
   },
   "legacyAST": {
     "absolutePath": "/C/projects/ethstoragedecode/contracttest/contracts/TestClassSimple.sol",
@@ -2508,7 +2508,7 @@
           ".21",
           "<",
           "0.6",
-          ".0"
+          ".2"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:32:1"
@@ -2558,7 +2558,7 @@
             "name": "testString",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "91:17:1",
+            "src": "95:17:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2569,7 +2569,7 @@
               "id": 61,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "91:6:1",
+              "src": "95:6:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -2584,7 +2584,7 @@
             "name": "uintArray",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "115:16:1",
+            "src": "123:16:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2596,7 +2596,7 @@
                 "id": 63,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "115:4:1",
+                "src": "123:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -2605,7 +2605,7 @@
               "id": 64,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "115:6:1",
+              "src": "123:6:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                 "typeString": "uint256[]"
@@ -2620,7 +2620,7 @@
             "name": "stringArray",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "138:20:1",
+            "src": "150:20:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2632,7 +2632,7 @@
                 "id": 66,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
-                "src": "138:6:1",
+                "src": "150:6:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_string_storage_ptr",
                   "typeString": "string"
@@ -2641,7 +2641,7 @@
               "id": 67,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "138:8:1",
+              "src": "150:8:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                 "typeString": "string[]"
@@ -2660,7 +2660,7 @@
                 "name": "simpleStructVal",
                 "nodeType": "VariableDeclaration",
                 "scope": 73,
-                "src": "201:20:1",
+                "src": "220:20:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2671,7 +2671,7 @@
                   "id": 69,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "201:4:1",
+                  "src": "220:4:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -2686,7 +2686,7 @@
                 "name": "simpleStructString",
                 "nodeType": "VariableDeclaration",
                 "scope": 73,
-                "src": "232:25:1",
+                "src": "251:25:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2697,7 +2697,7 @@
                   "id": 71,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "232:6:1",
+                  "src": "251:6:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -2710,7 +2710,7 @@
             "name": "SimpleStruct",
             "nodeType": "StructDefinition",
             "scope": 239,
-            "src": "165:106:1",
+            "src": "181:109:1",
             "visibility": "public"
           },
           {
@@ -2719,7 +2719,7 @@
             "name": "stringArray2",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "281:21:1",
+            "src": "300:21:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2731,7 +2731,7 @@
                 "id": 74,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
-                "src": "281:6:1",
+                "src": "300:6:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_string_storage_ptr",
                   "typeString": "string"
@@ -2740,7 +2740,7 @@
               "id": 75,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "281:8:1",
+              "src": "300:8:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                 "typeString": "string[]"
@@ -2755,7 +2755,7 @@
             "name": "arrayStruct",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "307:26:1",
+            "src": "329:26:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2769,7 +2769,7 @@
                 "name": "SimpleStruct",
                 "nodeType": "UserDefinedTypeName",
                 "referencedDeclaration": 73,
-                "src": "307:12:1",
+                "src": "329:12:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_SimpleStruct_$73_storage_ptr",
                   "typeString": "struct testClassSimple.SimpleStruct"
@@ -2778,7 +2778,7 @@
               "id": 78,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "307:14:1",
+              "src": "329:14:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_struct$_SimpleStruct_$73_storage_$dyn_storage_ptr",
                 "typeString": "struct testClassSimple.SimpleStruct[]"
@@ -2793,7 +2793,7 @@
             "name": "simpleMap",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "340:29:1",
+            "src": "366:29:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2806,14 +2806,14 @@
                 "id": 80,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "348:4:1",
+                "src": "374:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "340:19:1",
+              "src": "366:19:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                 "typeString": "mapping(uint256 => uint256)"
@@ -2822,7 +2822,7 @@
                 "id": 81,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "354:4:1",
+                "src": "380:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -2838,7 +2838,7 @@
             "name": "structMap",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "376:37:1",
+            "src": "406:37:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2851,14 +2851,14 @@
                 "id": 84,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "384:4:1",
+                "src": "414:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "376:27:1",
+              "src": "406:27:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                 "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct)"
@@ -2869,7 +2869,7 @@
                 "name": "SimpleStruct",
                 "nodeType": "UserDefinedTypeName",
                 "referencedDeclaration": 73,
-                "src": "390:12:1",
+                "src": "420:12:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_SimpleStruct_$73_storage_ptr",
                   "typeString": "struct testClassSimple.SimpleStruct"
@@ -2885,7 +2885,7 @@
             "name": "complexMap",
             "nodeType": "VariableDeclaration",
             "scope": 239,
-            "src": "420:53:1",
+            "src": "454:53:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2898,14 +2898,14 @@
                 "id": 88,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "428:4:1",
+                "src": "462:4:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "420:42:1",
+              "src": "454:42:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$_$",
                 "typeString": "mapping(uint256 => mapping(uint256 => struct testClassSimple.SimpleStruct))"
@@ -2916,14 +2916,14 @@
                   "id": 89,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "442:4:1",
+                  "src": "476:4:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
                   }
                 },
                 "nodeType": "Mapping",
-                "src": "434:27:1",
+                "src": "468:27:1",
                 "typeDescriptions": {
                   "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                   "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct)"
@@ -2934,7 +2934,7 @@
                   "name": "SimpleStruct",
                   "nodeType": "UserDefinedTypeName",
                   "referencedDeclaration": 73,
-                  "src": "448:12:1",
+                  "src": "482:12:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_struct$_SimpleStruct_$73_storage_ptr",
                     "typeString": "struct testClassSimple.SimpleStruct"
@@ -2949,7 +2949,7 @@
             "body": {
               "id": 237,
               "nodeType": "Block",
-              "src": "508:994:1",
+              "src": "546:996:1",
               "statements": [
                 {
                   "expression": {
@@ -2966,7 +2966,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 60,
-                      "src": "519:8:1",
+                      "src": "557:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2984,7 +2984,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "528:1:1",
+                      "src": "566:1:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_8_by_1",
@@ -2992,7 +2992,7 @@
                       },
                       "value": "8"
                     },
-                    "src": "519:10:1",
+                    "src": "557:10:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3000,7 +3000,7 @@
                   },
                   "id": 99,
                   "nodeType": "ExpressionStatement",
-                  "src": "519:10:1"
+                  "src": "557:10:1"
                 },
                 {
                   "expression": {
@@ -3017,7 +3017,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 62,
-                      "src": "540:10:1",
+                      "src": "578:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -3035,7 +3035,7 @@
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "551:14:1",
+                      "src": "589:14:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_24ba6315a24d649cdb612cc7b47327bb29ca0cd8f576d0a74a60860e99b28075",
@@ -3043,7 +3043,7 @@
                       },
                       "value": "test string "
                     },
-                    "src": "540:25:1",
+                    "src": "578:25:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
@@ -3051,7 +3051,7 @@
                   },
                   "id": 103,
                   "nodeType": "ExpressionStatement",
-                  "src": "540:25:1"
+                  "src": "578:25:1"
                 },
                 {
                   "expression": {
@@ -3067,7 +3067,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "591:2:1",
+                        "src": "629:2:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_12_by_1",
@@ -3090,7 +3090,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 65,
-                        "src": "576:9:1",
+                        "src": "614:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                           "typeString": "uint256[] storage ref"
@@ -3104,7 +3104,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "576:14:1",
+                      "src": "614:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) returns (uint256)"
@@ -3118,7 +3118,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "576:18:1",
+                    "src": "614:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3126,7 +3126,7 @@
                   },
                   "id": 109,
                   "nodeType": "ExpressionStatement",
-                  "src": "576:18:1"
+                  "src": "614:18:1"
                 },
                 {
                   "expression": {
@@ -3142,7 +3142,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "620:2:1",
+                        "src": "658:2:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_14_by_1",
@@ -3165,7 +3165,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 65,
-                        "src": "605:9:1",
+                        "src": "643:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                           "typeString": "uint256[] storage ref"
@@ -3179,7 +3179,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "605:14:1",
+                      "src": "643:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) returns (uint256)"
@@ -3193,7 +3193,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "605:18:1",
+                    "src": "643:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3201,7 +3201,7 @@
                   },
                   "id": 115,
                   "nodeType": "ExpressionStatement",
-                  "src": "605:18:1"
+                  "src": "643:18:1"
                 },
                 {
                   "expression": {
@@ -3217,7 +3217,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "649:2:1",
+                        "src": "687:2:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_15_by_1",
@@ -3240,7 +3240,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 65,
-                        "src": "634:9:1",
+                        "src": "672:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                           "typeString": "uint256[] storage ref"
@@ -3254,7 +3254,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "634:14:1",
+                      "src": "672:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) returns (uint256)"
@@ -3268,7 +3268,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "634:18:1",
+                    "src": "672:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3276,7 +3276,7 @@
                   },
                   "id": 121,
                   "nodeType": "ExpressionStatement",
-                  "src": "634:18:1"
+                  "src": "672:18:1"
                 },
                 {
                   "expression": {
@@ -3292,7 +3292,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "680:7:1",
+                        "src": "718:7:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_6d255fc3390ee6b41191da315958b7d6a1e5b17904cc7683558f98acc57977b4",
@@ -3315,7 +3315,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "663:11:1",
+                        "src": "701:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -3329,7 +3329,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "663:16:1",
+                      "src": "701:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -3343,7 +3343,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "663:25:1",
+                    "src": "701:25:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3351,7 +3351,7 @@
                   },
                   "id": 127,
                   "nodeType": "ExpressionStatement",
-                  "src": "663:25:1"
+                  "src": "701:25:1"
                 },
                 {
                   "expression": {
@@ -3367,7 +3367,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "716:6:1",
+                        "src": "754:6:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_9d0ad71e550b14712f11472e8373393fe3a47ffc2b4039a2c4ef8cea9d272ec9",
@@ -3390,7 +3390,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "699:11:1",
+                        "src": "737:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -3404,7 +3404,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "699:16:1",
+                      "src": "737:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -3418,7 +3418,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "699:24:1",
+                    "src": "737:24:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3426,7 +3426,7 @@
                   },
                   "id": 133,
                   "nodeType": "ExpressionStatement",
-                  "src": "699:24:1"
+                  "src": "737:24:1"
                 },
                 {
                   "expression": {
@@ -3442,7 +3442,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "751:4:1",
+                        "src": "789:4:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_71fef67183b572476f752fa7881659e61f3c9af44e4150a1a89474e3a9da15bb",
@@ -3465,7 +3465,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "734:11:1",
+                        "src": "772:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -3479,7 +3479,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "734:16:1",
+                      "src": "772:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -3493,7 +3493,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "734:22:1",
+                    "src": "772:22:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3501,7 +3501,7 @@
                   },
                   "id": 139,
                   "nodeType": "ExpressionStatement",
-                  "src": "734:22:1"
+                  "src": "772:22:1"
                 },
                 {
                   "expression": {
@@ -3517,7 +3517,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "784:14:1",
+                        "src": "822:14:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_bd1e007e0fdf6c97efecf31ce62cd930135eba6ea251e145702b39b74ae62059",
@@ -3540,7 +3540,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "767:11:1",
+                        "src": "805:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -3554,7 +3554,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "767:16:1",
+                      "src": "805:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -3568,7 +3568,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "767:32:1",
+                    "src": "805:32:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3576,7 +3576,7 @@
                   },
                   "id": 145,
                   "nodeType": "ExpressionStatement",
-                  "src": "767:32:1"
+                  "src": "805:32:1"
                 },
                 {
                   "expression": {
@@ -3592,7 +3592,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "827:15:1",
+                        "src": "865:15:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_a17fcfdebce6459d87e7983be7b63fbfa9c9fea80403e6e8a09102d2a448d29a",
@@ -3615,7 +3615,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 68,
-                        "src": "810:11:1",
+                        "src": "848:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
@@ -3629,7 +3629,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "810:16:1",
+                      "src": "848:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
                         "typeString": "function (string storage ref) returns (uint256)"
@@ -3643,7 +3643,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "810:33:1",
+                    "src": "848:33:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3651,7 +3651,7 @@
                   },
                   "id": 151,
                   "nodeType": "ExpressionStatement",
-                  "src": "810:33:1"
+                  "src": "848:33:1"
                 },
                 {
                   "expression": {
@@ -3670,7 +3670,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 83,
-                        "src": "963:9:1",
+                        "src": "1002:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                           "typeString": "mapping(uint256 => uint256)"
@@ -3687,7 +3687,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "973:1:1",
+                        "src": "1012:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_4_by_1",
@@ -3700,7 +3700,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "963:12:1",
+                      "src": "1002:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3718,7 +3718,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "978:2:1",
+                      "src": "1017:2:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_42_by_1",
@@ -3726,7 +3726,7 @@
                       },
                       "value": "42"
                     },
-                    "src": "963:17:1",
+                    "src": "1002:17:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3734,7 +3734,7 @@
                   },
                   "id": 157,
                   "nodeType": "ExpressionStatement",
-                  "src": "963:17:1"
+                  "src": "1002:17:1"
                 },
                 {
                   "expression": {
@@ -3753,7 +3753,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 83,
-                        "src": "991:9:1",
+                        "src": "1030:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                           "typeString": "mapping(uint256 => uint256)"
@@ -3770,7 +3770,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1001:1:1",
+                        "src": "1040:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_8_by_1",
@@ -3783,7 +3783,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "991:12:1",
+                      "src": "1030:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3801,7 +3801,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1006:2:1",
+                      "src": "1045:2:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_42_by_1",
@@ -3809,7 +3809,7 @@
                       },
                       "value": "42"
                     },
-                    "src": "991:17:1",
+                    "src": "1030:17:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3817,7 +3817,7 @@
                   },
                   "id": 163,
                   "nodeType": "ExpressionStatement",
-                  "src": "991:17:1"
+                  "src": "1030:17:1"
                 },
                 {
                   "expression": {
@@ -3836,7 +3836,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 83,
-                        "src": "1019:9:1",
+                        "src": "1058:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                           "typeString": "mapping(uint256 => uint256)"
@@ -3853,7 +3853,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1029:2:1",
+                        "src": "1068:2:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_10_by_1",
@@ -3866,7 +3866,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1019:13:1",
+                      "src": "1058:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3884,7 +3884,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1035:2:1",
+                      "src": "1074:2:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_42_by_1",
@@ -3892,7 +3892,7 @@
                       },
                       "value": "42"
                     },
-                    "src": "1019:18:1",
+                    "src": "1058:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3900,7 +3900,7 @@
                   },
                   "id": 169,
                   "nodeType": "ExpressionStatement",
-                  "src": "1019:18:1"
+                  "src": "1058:18:1"
                 },
                 {
                   "expression": {
@@ -3919,7 +3919,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1073:2:1",
+                            "src": "1112:2:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_10_by_1",
@@ -3937,7 +3937,7 @@
                             "kind": "string",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1076:24:1",
+                            "src": "1115:24:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_18406dbd2325e4a81a736d1fe51943390cb62b18fdc57a2ee2bc156e73792b6a",
@@ -3962,7 +3962,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 73,
-                          "src": "1060:12:1",
+                          "src": "1099:12:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                             "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -3976,7 +3976,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1060:41:1",
+                        "src": "1099:41:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                           "typeString": "struct testClassSimple.SimpleStruct memory"
@@ -3997,7 +3997,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 79,
-                        "src": "1042:11:1",
+                        "src": "1081:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_SimpleStruct_$73_storage_$dyn_storage",
                           "typeString": "struct testClassSimple.SimpleStruct storage ref[] storage ref"
@@ -4011,7 +4011,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1042:16:1",
+                      "src": "1081:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_SimpleStruct_$73_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct testClassSimple.SimpleStruct storage ref) returns (uint256)"
@@ -4025,7 +4025,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1042:60:1",
+                    "src": "1081:60:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4033,7 +4033,7 @@
                   },
                   "id": 178,
                   "nodeType": "ExpressionStatement",
-                  "src": "1042:60:1"
+                  "src": "1081:60:1"
                 },
                 {
                   "expression": {
@@ -4052,7 +4052,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1138:2:1",
+                            "src": "1177:2:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_20_by_1",
@@ -4070,7 +4070,7 @@
                             "kind": "string",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1141:24:1",
+                            "src": "1180:24:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_8dc7e5bfc0955eaa66e9c69de46e3632b57e8cee35a53d37144823708935bb41",
@@ -4095,7 +4095,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 73,
-                          "src": "1125:12:1",
+                          "src": "1164:12:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                             "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -4109,7 +4109,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1125:41:1",
+                        "src": "1164:41:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                           "typeString": "struct testClassSimple.SimpleStruct memory"
@@ -4130,7 +4130,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 79,
-                        "src": "1107:11:1",
+                        "src": "1146:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_SimpleStruct_$73_storage_$dyn_storage",
                           "typeString": "struct testClassSimple.SimpleStruct storage ref[] storage ref"
@@ -4144,7 +4144,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1107:16:1",
+                      "src": "1146:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_SimpleStruct_$73_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct testClassSimple.SimpleStruct storage ref) returns (uint256)"
@@ -4158,7 +4158,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1107:60:1",
+                    "src": "1146:60:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4166,7 +4166,7 @@
                   },
                   "id": 187,
                   "nodeType": "ExpressionStatement",
-                  "src": "1107:60:1"
+                  "src": "1146:60:1"
                 },
                 {
                   "expression": {
@@ -4185,7 +4185,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1203:2:1",
+                            "src": "1242:2:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_30_by_1",
@@ -4203,7 +4203,7 @@
                             "kind": "string",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1206:24:1",
+                            "src": "1245:24:1",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_d3076e33d1dc2d9a8845805aec21dbc1adb1b8aec89044bb5e585248a87aac4a",
@@ -4228,7 +4228,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 73,
-                          "src": "1190:12:1",
+                          "src": "1229:12:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                             "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -4242,7 +4242,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1190:41:1",
+                        "src": "1229:41:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                           "typeString": "struct testClassSimple.SimpleStruct memory"
@@ -4263,7 +4263,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 79,
-                        "src": "1172:11:1",
+                        "src": "1211:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_SimpleStruct_$73_storage_$dyn_storage",
                           "typeString": "struct testClassSimple.SimpleStruct storage ref[] storage ref"
@@ -4277,7 +4277,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1172:16:1",
+                      "src": "1211:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_SimpleStruct_$73_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct testClassSimple.SimpleStruct storage ref) returns (uint256)"
@@ -4291,7 +4291,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1172:60:1",
+                    "src": "1211:60:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4299,7 +4299,7 @@
                   },
                   "id": 196,
                   "nodeType": "ExpressionStatement",
-                  "src": "1172:60:1"
+                  "src": "1211:60:1"
                 },
                 {
                   "expression": {
@@ -4318,7 +4318,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 87,
-                        "src": "1246:9:1",
+                        "src": "1285:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                           "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct storage ref)"
@@ -4335,7 +4335,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1256:1:1",
+                        "src": "1295:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_4_by_1",
@@ -4348,7 +4348,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1246:12:1",
+                      "src": "1285:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                         "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -4369,7 +4369,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1274:2:1",
+                          "src": "1313:2:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_14_by_1",
@@ -4387,7 +4387,7 @@
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1277:18:1",
+                          "src": "1316:18:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_a822fd6cec05d733519230b841cd73254c3b1a591c46069d33832f239a01fc0e",
@@ -4412,7 +4412,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 73,
-                        "src": "1261:12:1",
+                        "src": "1300:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                           "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -4426,13 +4426,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1261:35:1",
+                      "src": "1300:35:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                         "typeString": "struct testClassSimple.SimpleStruct memory"
                       }
                     },
-                    "src": "1246:50:1",
+                    "src": "1285:50:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                       "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -4440,7 +4440,7 @@
                   },
                   "id": 205,
                   "nodeType": "ExpressionStatement",
-                  "src": "1246:50:1"
+                  "src": "1285:50:1"
                 },
                 {
                   "expression": {
@@ -4459,7 +4459,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 87,
-                        "src": "1307:9:1",
+                        "src": "1346:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                           "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct storage ref)"
@@ -4476,7 +4476,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1317:1:1",
+                        "src": "1356:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
@@ -4489,7 +4489,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1307:12:1",
+                      "src": "1346:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                         "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -4510,7 +4510,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1335:2:1",
+                          "src": "1374:2:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_21_by_1",
@@ -4528,7 +4528,7 @@
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1338:18:1",
+                          "src": "1377:18:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_84b20616d4b535bd5080b81a2b25941d0e33fa12eb1e98fbf8bde590e49e27be",
@@ -4553,7 +4553,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 73,
-                        "src": "1322:12:1",
+                        "src": "1361:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                           "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -4567,13 +4567,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1322:35:1",
+                      "src": "1361:35:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                         "typeString": "struct testClassSimple.SimpleStruct memory"
                       }
                     },
-                    "src": "1307:50:1",
+                    "src": "1346:50:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                       "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -4581,7 +4581,7 @@
                   },
                   "id": 214,
                   "nodeType": "ExpressionStatement",
-                  "src": "1307:50:1"
+                  "src": "1346:50:1"
                 },
                 {
                   "expression": {
@@ -4602,7 +4602,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 93,
-                          "src": "1368:10:1",
+                          "src": "1407:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$_$",
                             "typeString": "mapping(uint256 => mapping(uint256 => struct testClassSimple.SimpleStruct storage ref))"
@@ -4619,7 +4619,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1379:1:1",
+                          "src": "1418:1:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_1_by_1",
@@ -4632,7 +4632,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1368:13:1",
+                        "src": "1407:13:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                           "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct storage ref)"
@@ -4649,7 +4649,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1382:1:1",
+                        "src": "1421:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_2_by_1",
@@ -4662,7 +4662,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1368:16:1",
+                      "src": "1407:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                         "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -4683,7 +4683,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1400:2:1",
+                          "src": "1439:2:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_12_by_1",
@@ -4701,7 +4701,7 @@
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1403:20:1",
+                          "src": "1442:20:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_f5a3ec6b6808358f8e519b10efb650f08c2ab950065bab9a5198444c5bd958c1",
@@ -4726,7 +4726,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 73,
-                        "src": "1387:12:1",
+                        "src": "1426:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                           "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -4740,13 +4740,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1387:37:1",
+                      "src": "1426:37:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                         "typeString": "struct testClassSimple.SimpleStruct memory"
                       }
                     },
-                    "src": "1368:56:1",
+                    "src": "1407:56:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                       "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -4754,7 +4754,7 @@
                   },
                   "id": 225,
                   "nodeType": "ExpressionStatement",
-                  "src": "1368:56:1"
+                  "src": "1407:56:1"
                 },
                 {
                   "expression": {
@@ -4775,7 +4775,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 93,
-                          "src": "1435:10:1",
+                          "src": "1474:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$_$",
                             "typeString": "mapping(uint256 => mapping(uint256 => struct testClassSimple.SimpleStruct storage ref))"
@@ -4792,7 +4792,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1446:1:1",
+                          "src": "1485:1:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_2_by_1",
@@ -4805,7 +4805,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1435:13:1",
+                        "src": "1474:13:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_SimpleStruct_$73_storage_$",
                           "typeString": "mapping(uint256 => struct testClassSimple.SimpleStruct storage ref)"
@@ -4822,7 +4822,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1449:1:1",
+                        "src": "1488:1:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_2_by_1",
@@ -4835,7 +4835,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1435:16:1",
+                      "src": "1474:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                         "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -4856,7 +4856,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1467:2:1",
+                          "src": "1506:2:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_22_by_1",
@@ -4874,7 +4874,7 @@
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1470:20:1",
+                          "src": "1509:20:1",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_d1f95fc82df2ccaed9f04304f292882eb4dbf3e2cf6712d4c122a8b40e8034dd",
@@ -4899,7 +4899,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 73,
-                        "src": "1454:12:1",
+                        "src": "1493:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_SimpleStruct_$73_storage_ptr_$",
                           "typeString": "type(struct testClassSimple.SimpleStruct storage pointer)"
@@ -4913,13 +4913,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1454:37:1",
+                      "src": "1493:37:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_SimpleStruct_$73_memory",
                         "typeString": "struct testClassSimple.SimpleStruct memory"
                       }
                     },
-                    "src": "1435:56:1",
+                    "src": "1474:56:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_SimpleStruct_$73_storage",
                       "typeString": "struct testClassSimple.SimpleStruct storage ref"
@@ -4927,7 +4927,7 @@
                   },
                   "id": 236,
                   "nodeType": "ExpressionStatement",
-                  "src": "1435:56:1"
+                  "src": "1474:56:1"
                 }
               ]
             },
@@ -4942,26 +4942,26 @@
               "id": 94,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "493:2:1"
+              "src": "531:2:1"
             },
             "returnParameters": {
               "id": 95,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "508:0:1"
+              "src": "546:0:1"
             },
             "scope": 239,
-            "src": "482:1020:1",
+            "src": "520:1022:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 240,
-        "src": "38:1467:1"
+        "src": "38:1507:1"
       }
     ],
-    "src": "0:1505:1"
+    "src": "0:1545:1"
   },
   "compiler": {
     "name": "solc",
@@ -4972,11 +4972,11 @@
       "events": {},
       "links": {},
       "address": "0xddD7b7B1B4Ec49C47d1C2dCCE930eDcB65951077",
-      "transactionHash": "0x9decb5eef7cf7ecd68ce60654d09d63b79428835d8b386b9d713de12f4952a99"
+      "transactionHash": "0xb9b1d31fc582946b5b1afbf40aa714c77d5dd482f626458bc20ab35e4125eacb"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-02-11T12:51:56.842Z",
+  "updatedAt": "2020-02-28T02:10:19.699Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

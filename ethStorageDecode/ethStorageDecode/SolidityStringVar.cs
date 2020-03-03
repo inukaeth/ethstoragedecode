@@ -2,6 +2,7 @@
 using Nethereum.Web3;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Text.RegularExpressions;
 
 namespace ethStorageDecode
 {
@@ -26,15 +27,22 @@ namespace ethStorageDecode
 
         public override DecodedContainer DecodeIntoContainer(Web3 web, string address, BigInteger index, int offset)
         {
-            string val = getStorageAt(web, address, index);
+            string val = getStorageAt(web, address, index);           
             string decode;
             if(offset>0 || size<32)
             {
                 BigInteger num = SolidityUtils.getAtOffset(val, offset, size);
                 val = num.ToString(); //TODO: test ouf small size strings
                
-            }
+            }         
+
             decode = new Bytes32TypeDecoder().Decode<string>(val);
+            //testString test string \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\u0018
+            //clean this up
+            string[] substrings = decode.Split('\0', 2);
+            if (substrings.Length > 0) //if it is not null terminated for some reason leave it as is
+                decode = substrings[0];
+                 
             return new DecodedContainer
             {
                 decodedValue = decode,

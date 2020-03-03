@@ -26,7 +26,7 @@ namespace ethStorageDecode
                 once = true;
             }
         }
-        List<SolidityVar> typesList = new List<SolidityVar>();
+        public List<SolidityVar> typesList = new List<SolidityVar>();
 
         public void AddType(SolidityVar type)
         {

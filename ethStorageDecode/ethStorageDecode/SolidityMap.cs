@@ -67,7 +67,13 @@ namespace ethStorageDecode
                     string lastkey = str;
                     foreach (string itm in items)
                     {
-                        BigInteger num = BigInteger.Parse("0" + itm, System.Globalization.NumberStyles.Number);
+                        BigInteger num;
+                        if (itm.StartsWith("0x"))
+                        {
+                            num = BigInteger.Parse(itm.Replace("0x","0"), System.Globalization.NumberStyles.HexNumber);
+                        }
+                        else
+                            num = BigInteger.Parse("0" + itm, System.Globalization.NumberStyles.Number);
                         //allitems.Insert(0, num.ToString("x64"));
                         lastkey = new Sha3Keccack().CalculateHashFromHex(num.ToString("x64"), lastkey);
                     }

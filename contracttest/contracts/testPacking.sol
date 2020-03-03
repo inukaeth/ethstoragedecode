@@ -1,4 +1,4 @@
-pragma solidity >=0.4.21 <0.6.0;
+pragma solidity >=0.4.21 <0.6.2;
 
 
 contract testPacking
@@ -22,7 +22,7 @@ contract testPacking
 
     constructor() public
     {
-        slot0off0=19;
+       slot0off0=19;
         slot0off8=21;
         slot0off40=54;
         slot1off0=57;

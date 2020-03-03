@@ -35,18 +35,45 @@ namespace ethStorageDecode
         public List<string> searchpath;         
         string ethURL;
         string address;
-        
-       
+        Dictionary<string, string> multiContracts;
+    
 
 
-        public SolList(List<string> _searchpath, string _address, string _ethURL)
+
+
+
+        public SolList(List<string> _searchpath,  Dictionary<string,string> _multiContracts)
         {
             searchpath = _searchpath;
+            multiContracts = _multiContracts;
+            
         }
-
-        public void MergeSubDecoder(SolList subdecoder)
+                public void MergeSubDecoder(SolList subdecoder)
         {
             variableList.AddRange(subdecoder.variableList);
+        }
+
+        public override void ExitInheritanceSpecifier([NotNull] InheritanceSpecifierContext context)
+        {
+            string importName = context.Start.Text+".sol";
+            if (multiContracts != null && multiContracts.ContainsKey(context.Start.Text))
+            {
+                SolList subdecoder = solidtyDecoder.DecodeInoSubDecoder(multiContracts[context.Start.Text], address, ethURL, searchpath, multiContracts);
+            }
+            else
+            {
+                foreach (string filepath in searchpath)
+                {
+                    if (File.Exists(Path.Combine(filepath, importName)))
+                    {
+                        StreamReader txt = new StreamReader(Path.Combine(filepath, importName));
+                        SolList subdecoder = solidtyDecoder.DecodeInoSubDecoder(txt.ReadToEnd(), address, ethURL, searchpath, multiContracts);
+                        this.MergeSubDecoder(subdecoder);
+                        return;
+                    }
+                }
+            }
+            errorList.Add("File for import not found :" + importName);
         }
 
 
@@ -59,9 +86,7 @@ namespace ethStorageDecode
             foreach (string filepath in searchpath)
             {
                 if (File.Exists(Path.Combine(filepath,importName)))
-                {
-                    SolList subdecoder = solidtyDecoder.DecodeInoSubDecoder(Path.Combine(filepath, importName), address, ethURL, searchpath);
-                    this.MergeSubDecoder(subdecoder);
+                {                    
                     return;
                 }
             }             
@@ -181,22 +206,6 @@ namespace ethStorageDecode
         }
         
 
-        public override void ExitIdentifier([NotNull] IdentifierContext context)
-        {
-            if(startVar)
-            {
-                string tst = context.Stop.Text;
-            }
-        }
-
-        public override void EnterExpression([NotNull] ExpressionContext context)
-        {
-            //base.EnterExpression(context);
-            if(startVar)
-            {
-                string brackets = context.Start.Text;
-            }
-        }
 
         public override void EnterExpressionList([NotNull] ExpressionListContext context)
         {
@@ -375,7 +384,8 @@ namespace ethStorageDecode
                     else
                     {
                         //  throw new NotSupportedException("unknwon type " + typename);
-                        Console.WriteLine(" uknown type " + typename + " at " +context.Start.Line);
+                        Console.WriteLine(" uknown type " + typename + " at adding as address" +context.Start.Line);
+                        currentVar = new SolidityAddress(name);
                     }
                     break;
             }

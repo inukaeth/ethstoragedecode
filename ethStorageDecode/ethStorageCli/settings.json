@@ -1,10 +1,11 @@
 ﻿{
-  "EthURL": "HTTP://127.0.0.1:7545",
+  "EthURL": "https://mainnet.infura.io/v3/8d1f38903b154828a4dcf9f803d73d3a",
   "searchpath": [ "C:\\projects\\ethstoragedecode\\contracttest\\contracts" ],
-  "inputfile": "C:\\projects\\ethstoragedecode\\contracttest\\contracts\\testPacking.sol",
-  "address": "0xbC1F7a566B5E1EB6161Ee0FB3d3182abc01E489D",
+  "inputfile": "C:\\projects\\ethstoragedecode\\maker_cat.sol",
+  "address": "0x78F2c2AF65126834c51822F56Be0d7469D7A523E",
+  "className": "Cat",
   "MapVariables": {
-    "simpleMap": [ "4", "8", "10","12" ],
+    "simpleMap": [ "4", "8", "10", "12" ],
     "complexMap": [ "1,2", "2,2" ],
     "structMap": [ "1", "4" ]
   }

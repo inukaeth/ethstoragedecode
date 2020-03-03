@@ -46,7 +46,8 @@ namespace ethStorageDecode
 
         public override int getByteSize()
         {
-            throw new System.NotImplementedException();
+            return 32;
+            
         }
 
        

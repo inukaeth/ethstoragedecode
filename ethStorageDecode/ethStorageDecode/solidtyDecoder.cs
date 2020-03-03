@@ -11,7 +11,8 @@ namespace ethStorageDecode
     public class solidtyDecoder
     {
 
-        public static List<DecodedContainer> DecodIntoContainer(List<SolidityVar> variableList, Web3 connect, string address, BigInteger index, int offset = 0)
+        public static List<DecodedContainer> DecodIntoContainer(List<SolidityVar> variableList, Web3 connect, 
+            string address, BigInteger index, int offset = 0, string className="")
         {
             List<DecodedContainer> decodeList = new List<DecodedContainer>();           
             
@@ -24,7 +25,7 @@ namespace ethStorageDecode
                 if (i+1 < variableList.Count)
                 {
                     SolidityVar next = variableList[i + 1];
-                    if ( next.getByteSize()>-1 && (offset + var.getByteSize() + next.getByteSize() < 32))
+                    if ( var.getByteSize()>-1 && next.getByteSize()>-1 && (offset + var.getByteSize() + next.getByteSize() < 32))
                         offset += var.getByteSize(); 
                     else
                     {
@@ -63,38 +64,52 @@ namespace ethStorageDecode
         }
 
 
-
-
-
-
-        public static StringBuilder Decode(string path, string address, string ethURL, List<string> searchpath)
+        public static List<DecodedContainer> DecodeIntoContainerList(string path, string address, string ethURL, List<string> searchpath,
+            Dictionary<string, string> multiContracts, string className="")
         {
             StreamReader txt = new StreamReader(path);
-            AntlrInputStream inputStream = new AntlrInputStream(txt.ReadToEnd());
+            AntlrInputStream inputStream;
+            if (String.IsNullOrEmpty(className))
+                inputStream = new AntlrInputStream(txt.ReadToEnd());
+            else
+            {
+                if (!multiContracts.ContainsKey(className))
+                    throw new KeyNotFoundException("Error the className " + className + " Not in file");
+                inputStream = new AntlrInputStream(multiContracts[className]);
+            }
             SolidityLexer speakLexer = new SolidityLexer(inputStream);
             CommonTokenStream commonTokenStream = new CommonTokenStream(speakLexer);
             SolidityParser solParser = new SolidityParser(commonTokenStream);
-            var lst = new SolList(searchpath,address,ethURL);
+            var lst = new SolList(searchpath,multiContracts );
             solParser.AddParseListener(lst);
             solParser.sourceUnit();
             Web3 connect = new Web3(ethURL);
-            List<DecodedContainer> decodeList = DecodIntoContainer(lst.variableList, connect, address,0);
+            return DecodIntoContainer(lst.variableList, connect, address, 0);
+        }
+
+
+
+        public static StringBuilder Decode(string path, string address, string ethURL, List<string> searchpath, Dictionary<string, string> multiContracts, string className="")
+        {
+            List<DecodedContainer> decodeList = DecodeIntoContainerList(path, address, ethURL, searchpath, multiContracts, className);
             StringBuilder decodedoutput = DecodedContainerTextPrint.print(decodeList);
             return decodedoutput;
         }
 
-        public static SolList DecodeInoSubDecoder(string path, string address, string ethURL, List<string> searchpath)
+        public static SolList DecodeInoSubDecoder(string txtContent, string address, string ethURL, List<string> searchpath, Dictionary<string,string> subcontracts)
         {
-            StreamReader txt = new StreamReader(path);
-            AntlrInputStream inputStream = new AntlrInputStream(txt.ReadToEnd());
+
+            AntlrInputStream inputStream = new AntlrInputStream(txtContent);
             SolidityLexer speakLexer = new SolidityLexer(inputStream);
             CommonTokenStream commonTokenStream = new CommonTokenStream(speakLexer);
             SolidityParser solParser = new SolidityParser(commonTokenStream);
-            var lst = new SolList(searchpath, address, ethURL);
+            var lst = new SolList(searchpath, subcontracts);
             solParser.AddParseListener(lst);
             solParser.sourceUnit();
             return lst;
         }
+
+        
 
 
     }

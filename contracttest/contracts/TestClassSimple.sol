@@ -1,22 +1,22 @@
-pragma solidity >=0.4.21 <0.6.0;
+pragma solidity >=0.4.21 <0.6.2;
 
 
 contract testClassSimple
 {
-    uint testUint;
-    string testString;
-    uint[] uintArray;
-    string[] stringArray;
-    struct SimpleStruct
+    uint testUint; //0
+    string testString; //1
+    uint[] uintArray; //2
+    string[] stringArray; //3
+    struct SimpleStruct //
     {
         uint simpleStructVal;
         string simpleStructString;      
     }    
-    string[] stringArray2; 
-	SimpleStruct[] arrayStruct;
-    mapping(uint=>uint) simpleMap;
-    mapping(uint=>SimpleStruct) structMap;
-    mapping(uint=>mapping(uint=>SimpleStruct)) complexMap;
+    string[] stringArray2; //4
+	SimpleStruct[] arrayStruct; //5
+    mapping(uint=>uint) simpleMap; //6
+    mapping(uint=>SimpleStruct) structMap; //7
+    mapping(uint=>mapping(uint=>SimpleStruct)) complexMap; //8
 
     constructor() public
     {
@@ -29,7 +29,7 @@ contract testClassSimple
         stringArray.push("rain");
         stringArray.push("in");
         stringArray.push("stays mainly");
-        stringArray.push("in the plains");
+        stringArray.push("in the plains"); 
         //struct1.simpleStructVal = 42;
         //struct1.simpleStructString = "the answer to everything";
         simpleMap[4] = 42;
@@ -41,7 +41,7 @@ contract testClassSimple
         structMap[4] = SimpleStruct(14,"mapping struct 1");
         structMap[1] = SimpleStruct(21,"mapping struct 2");
         complexMap[1][2] = SimpleStruct(12,"complex struct 1 2");
-        complexMap[2][2] = SimpleStruct(22,"complex struct 2 2");
+        complexMap[2][2] = SimpleStruct(22,"complex struct 2 2"); 
 
      }
 }
