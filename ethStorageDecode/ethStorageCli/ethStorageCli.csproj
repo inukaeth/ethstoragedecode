@@ -3,6 +3,21 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AssemblyName>ethereumStorageDecoder</AssemblyName>
+    <PackageId>ethereumStorageDecoder</PackageId>
+    <Version>0.1.0.0</Version>
+    <Authors>Inuka Gunawardanna</Authors>
+    <Product>ethereumStorageDecoder</Product>
+    <Description>Ethereum storage Decoder, is a development tool that decodes Ethereum contract storage of any contract as long as you have the source code and</Description>
+    <Copyright>Copyright (c) 2020 Inuka Gunawardana</Copyright>
+    <PackageProjectUrl>https://gitlab.com/inuka_g/ethstoragedecode</PackageProjectUrl>
+    <RepositoryUrl>https://gitlab.com/inuka_g/ethstoragedecode</RepositoryUrl>
+    <PackageReleaseNotes>Version 0.1.0.0
+This is a development release which needs further testing. Currently is able to parse contracts and decode memory for ethereum based blockchains. Only supports solidity.</PackageReleaseNotes>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishSingleFile>true</PublishSingleFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ethStorageDecode\ethStorageDecode.csproj" />
+    <ProjectReference Include="..\ethStorageDecode\ethStorageDecode.csproj" GlobalPropertiesToRemove="SelfContained" />
   </ItemGroup>
 
   <ItemGroup>

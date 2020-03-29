@@ -10,8 +10,8 @@ contract testClassSimple
     struct SimpleStruct //
     {
         uint simpleStructVal;
-        string simpleStructString;      
-    }    
+        string simpleStructString;
+    }
     string[] stringArray2; //4
 	SimpleStruct[] arrayStruct; //5
     mapping(uint=>uint) simpleMap; //6
@@ -20,8 +20,8 @@ contract testClassSimple
 
     constructor() public
     {
-        testUint=8;
-        testString="test string ";
+        testUint = 8;
+        testString = "test string ";
         uintArray.push(12);
         uintArray.push(14);
         uintArray.push(15);
@@ -29,19 +29,17 @@ contract testClassSimple
         stringArray.push("rain");
         stringArray.push("in");
         stringArray.push("stays mainly");
-        stringArray.push("in the plains"); 
-        //struct1.simpleStructVal = 42;
-        //struct1.simpleStructString = "the answer to everything";
+        stringArray.push("in the plains");
         simpleMap[4] = 42;
         simpleMap[8] = 42;
         simpleMap[10] = 42;
-		arrayStruct.push( SimpleStruct(10,"Test struct 1 in array"));
-		arrayStruct.push( SimpleStruct(20,"Test struct 2 in array"));
-		arrayStruct.push( SimpleStruct(30,"Test struct 3 in array"));   
+		arrayStruct.push(SimpleStruct(10,"Test struct 1 in array"));
+		arrayStruct.push(SimpleStruct(20,"Test struct 2 in array"));
+		arrayStruct.push(SimpleStruct(30,"Test struct 3 in array"));
         structMap[4] = SimpleStruct(14,"mapping struct 1");
         structMap[1] = SimpleStruct(21,"mapping struct 2");
         complexMap[1][2] = SimpleStruct(12,"complex struct 1 2");
-        complexMap[2][2] = SimpleStruct(22,"complex struct 2 2"); 
+        complexMap[2][2] = SimpleStruct(22,"complex struct 2 2");
 
      }
 }

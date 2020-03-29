@@ -34,6 +34,7 @@ namespace ethStorageDecode
             {
                 throw new NotSupportedException("Error the addreess field should not have an offset");
             }
+            ethGlobal.DebugPrint("Decoding Address "+name);
             string val = getStorageAt(web, address, index);
             return new DecodedContainer
             {

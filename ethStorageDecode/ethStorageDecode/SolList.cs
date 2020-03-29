@@ -108,13 +108,13 @@ namespace ethStorageDecode
         public override void EnterFunctionCall([NotNull] FunctionCallContext context)
         {
             inFunction = true;
-            Console.WriteLine("Entering function call " + context.Start.Text);
+            ethGlobal.DebugPrint("Entering function call " + context.Start.Text);
         }
 
         public override void ExitFunctionCall([NotNull] FunctionCallContext context)
         {
-            inFunction = false; 
-            Console.WriteLine("->Exit function call " + context.Start.Text);
+            inFunction = false;
+            ethGlobal.DebugPrint("->Exit function call " + context.Start.Text);
         }
 
         public override void EnterEnumDefinition([NotNull] EnumDefinitionContext context)
@@ -129,7 +129,7 @@ namespace ethStorageDecode
             enumDefs.Add(currEnum.name, currEnum);
             enumStart = false;
             currEnum = null;
-            Console.WriteLine("->Exit enum value " + context.Start.Text);
+            ethGlobal.DebugPrint("->Exit enum value " + context.Start.Text);
 
         }
 
@@ -137,7 +137,7 @@ namespace ethStorageDecode
         {
             enumStart = false;
             currEnum.AddEnum(context.Start.Text);
-            Console.WriteLine("Enter enum value " + context.Start.Text);
+            ethGlobal.DebugPrint("Enter enum value " + context.Start.Text);
 
 
         }
@@ -150,7 +150,7 @@ namespace ethStorageDecode
                 isconst = true;
             startVar = true;
             structStart = false;
-            Console.WriteLine("Entering declarartion of " +  context.Start.Text);
+            ethGlobal.DebugPrint("Entering declarartion of " +  context.Start.Text);
             
 
             //Lines.Add(context);
@@ -413,7 +413,7 @@ namespace ethStorageDecode
                 }
                 else
                     variableList.Add(currentVar);
-                Console.WriteLine("added " + name);
+                ethGlobal.DebugPrint("added " + name);
             }
         }
             

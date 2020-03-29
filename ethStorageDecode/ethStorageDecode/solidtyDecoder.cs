@@ -44,6 +44,7 @@ namespace ethStorageDecode
 
             for (int i = 0; i < numInstances; i++)
             {
+                ethGlobal.DebugPrint(String.Format("[{0}]",i));
                 var currContainer = var.DecodeIntoContainer(connect, address, index, offset);
                 currContainer.key = i.ToString();
                 decodeList.Add(currContainer);

@@ -65,6 +65,7 @@ namespace ethStorageDecode
                     String str = (index).ToString("x64");
                     //first key is the index to the map
                     string lastkey = str;
+                    ethGlobal.DebugPrint(String.Format("Decoding Map {0} [{1}]", name, ky));
                     foreach (string itm in items)
                     {
                         BigInteger num;
@@ -75,10 +76,14 @@ namespace ethStorageDecode
                         else
                             num = BigInteger.Parse("0" + itm, System.Globalization.NumberStyles.Number);
                         //allitems.Insert(0, num.ToString("x64"));
+                        string oldkey = lastkey;
                         lastkey = new Sha3Keccack().CalculateHashFromHex(num.ToString("x64"), lastkey);
+                        ethGlobal.DebugPrint(String.Format("Hash for Map: new Sha3Keccack().CalculateHashFromHex({0}, {1}) {2}" ,
+                           num.ToString("x64"),oldkey,lastkey));
                     }
                                                                                             //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
-                    BigInteger ind = BigInteger.Parse("0" + lastkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative       
+                    BigInteger ind = BigInteger.Parse("0" + lastkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative  
+                    
                     var currContianer = basevar.DecodeIntoContainer(web, address, ind, 0);
                     currContianer.key = ky;
                     cont.children.Add(currContianer);

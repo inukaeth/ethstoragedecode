@@ -1,4 +1,8 @@
-﻿using System;
+﻿
+
+
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -19,18 +23,18 @@ namespace ethStorageCli
     {
 
         
-        //TODO: inheritance
-        //TODO: GUI
-        //TODO: associate actual memory storage to memory space mapping in ??
-        //TODO: handles compaction of smaller types
-        //TODO: types byte int
-        //TODO: test array of vars less than 256bytes
-        //TODO: test array of structs. 1. with same size, with varying size
-        //TODO: add struct in the middle of variables and replicate issue that was causing antlr to hang
+       
+
         static void Main(string[] args)
         {
+            if(! File.Exists(@"settings.json"))
+            {
+                Console.WriteLine("Error a settings.json file must be provided with required settings");
+                return;
+            }
+            Console.WriteLine("Settings file is " + Path.GetFullPath("settings.json"));
             IConfiguration config = new ConfigurationBuilder()
-              .AddJsonFile("settings.json", true, true)
+              .AddJsonFile(Path.GetFullPath("settings.json"), true, true)
               .Build();
 
             /*"searchpath": [ "C:\\inuka_proj\\gitStorageDecodegit\\contracttest\\contracts" ],
@@ -41,6 +45,7 @@ namespace ethStorageCli
             }*/
             List<string> searchpath = config.GetSection("searchpath").Get<List<string>>();
             String inputfile = config.GetSection("inputfile").Value;
+            Console.WriteLine("inuput file is " + inputfile);
             var varsection = config.GetSection("MapVariables").GetChildren();
             foreach(var chld in varsection)
             {
@@ -51,7 +56,34 @@ namespace ethStorageCli
             }
             string address = config["address"];
             string ethURL = config["ethURL"];
+            if(string.IsNullOrEmpty(address))
+            {
+                Console.WriteLine("address field is required");
+                return;
+            }
+            if(string.IsNullOrEmpty(ethURL))
+            {
+                Console.WriteLine("URL to the ethereum node or Ganache must be provided");
+                return;
+            }
+            /*check node and web3 connectivity */
+            Web3 web = new Web3(ethURL);
+            try
+            {
+                var currentBlock = web.Eth.Blocks.GetBlockNumber.SendRequestAsync();
+                currentBlock.Wait();
+            }
+            catch(Exception exp)
+            {
+                Console.WriteLine("ERROR: not able to connect to Ethereum node or Ganache with the following error "+exp.Message);
+                return;
+            }
             string className = config["className"]; //for the case where multiple contracts are in the same file.
+            string isdebug = config["debug"];
+            if(!string.IsNullOrEmpty(isdebug) && isdebug.ToLower()=="true")
+            {
+                ethGlobal.IsDebug = true;
+            }
             if (!File.Exists(inputfile))
             {
                 Console.WriteLine("Error the input file does not exist :" + inputfile);

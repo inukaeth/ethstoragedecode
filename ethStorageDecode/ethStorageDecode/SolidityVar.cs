@@ -3,6 +3,7 @@ using Nethereum.Util;
 using Nethereum.Web3;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Numerics;
 
 namespace ethStorageDecode
@@ -12,13 +13,13 @@ namespace ethStorageDecode
 
         
         public string name;
-        public abstract int getIndexSize();
+        public abstract int getIndexSize(); 
         public abstract int getByteSize();
 
 
         public string getStorageAt(Web3 web, string address, BigInteger index)
         {
-
+            ethGlobal.DebugPrint(String.Format("    GetStorageAt({0},{1}", address, index.ToString("x64")));
             var tsk = web.Eth.GetStorageAt.SendRequestAsync(address, new HexBigInteger(index));
             tsk.Wait();
             return tsk.Result;

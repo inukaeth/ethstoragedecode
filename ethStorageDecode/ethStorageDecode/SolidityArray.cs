@@ -27,11 +27,13 @@ namespace ethStorageDecode
             string val = getStorageAt(web, address, index);
             //this is the lenth
             int len = Convert.ToInt32(val, 16);
+            ethGlobal.DebugPrint("Decoding Arrray " + name+" with length "+len);
             List<string> res = new List<string>();
             //res.Add("(array)" + name + "=");
            
             String str = index.ToString("x64");
             var newkey = new Sha3Keccack().CalculateHashFromHex(str);//pad with zero to prevent BigIntegar prase from making number negative
+            ethGlobal.DebugPrint("Array Decoding index  " + str + " hash is " + newkey);
             //var newkey = Web3.Sha3((index).ToString());//pad with zero to prevent BigIntegar prase from making number negative
             BigInteger ind = BigInteger.Parse("0" + newkey, System.Globalization.NumberStyles.HexNumber);//pad with zero to prevent BigIntegar prase from making number negative            
             DecodedContainer cont = new DecodedContainer
